@@ -1,5 +1,20 @@
 /*GLOBAL STYLES*/
 
+@font-face {
+    font-family: 'AvenirRegular'; /*a name to be used later*/
+    src: url('../fonts/AvenirRegular.otf'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'AvenirDemi'; /*a name to be used later*/
+    src: url('../fonts/AvenirDemi.otf'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'AvenirBold'; /*a name to be used later*/
+    src: url('../fonts/AvenirBold.otf'); /*URL to font*/
+}
+
 /*Primary text*/
 .pt {
 	color: #935c4e;
@@ -60,17 +75,29 @@
 	padding-left: 30px;
 }
 
+.pad-5 {
+	padding: 5px;
+}
+
+.pad-10 {
+	padding: 10px;
+}
+
+.dashed-box {
+	border: 1px dashed #935c4e;
+}
+
 /*GLOBAL STYLES END*/
 
 /*Header*/
 
-.carousel-caption {
+/*.carousel-caption {
 	text-align: left;
 }
 
 .carousel-indicators {
 	left: 800px;
-}
+}*/
 
 .header-user-col {
 	text-align: right;

@@ -45,19 +45,25 @@ body {
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   z-index: 10;
+  text-align: left;
+  color: #935c4e;
+  font-family: 'AvenirRegular';
+  text-shadow: none;
+  top: 150px;
 }
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
   height: 500px;
-  background-color: #777;
+  /*background-color: #777;*/
 }
 .carousel-inner > .item > img {
   position: absolute;
   top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 500px;
+  left: 15%;
+  /*min-width: 100%;*/
+  max-width: none;
+  height: 100%;
 }
 
 
@@ -131,4 +137,23 @@ body {
   .featurette-heading {
     margin-top: 120px;
   }
+}
+
+/*Carousel custom*/
+#myCarousel{
+  margin-top: 181px;
+}
+
+/*Caurosel controls override*/
+.carousel-control.left{
+  /*background-image: none;*/
+}
+
+#myCarousel .carousel-button {
+  display: block;
+  width:244px;
+  height: 67px;
+  border: 1px solid #935c4e;
+  padding: 0px;
+  margin: 0px;
 }
