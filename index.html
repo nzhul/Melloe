@@ -3,27 +3,13 @@
 
 <head>
 	<meta charset="utf-8" />
-	<title></title>
-	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
+	<title>Melloe</title>
 	<script src="scripts/external/jquery-3.1.1.min.js"></script>
-	<!-- Latest compiled and minified CSS -->
-	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
-	<!-- Optional theme -->
-	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">-->
-	<!-- Latest compiled and minified JavaScript -->
-	<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
-
 	<link href="scripts/external/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" />
-	<!--<link href="scripts/external/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" rel="stylesheet" />-->
 	<script src="scripts/external/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-
 	<link rel="stylesheet" href="scripts/external/font-awesome-4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="styles/main.css">
 	<link href="styles/carousel.css" rel="stylesheet" />
-	
-	<style>
-
-	</style>
 </head>
 
 <body>
@@ -97,6 +83,7 @@
 
 	<!-- Carousel -->
 	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		<div class="carousel-horizontal-divider"></div>
 		<!-- Indicators -->
 		<ol class="carousel-indicators">
 			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -109,7 +96,10 @@
 				<div class="container">
 					<div class="carousel-caption">
 						<h2>'Dessert is to a meal <br/> what a dress is to a woman.'</h2>
-						<p><a href="#" class="carousel-button">Explore Desserts</a></p>
+						<p style="position:relative;left:250px;">- Béatrice Peltre</p>
+						<p>
+							<a href="#" class="carousel-button pt">Explore Desserts <img src="images/button-long-arrow.png" alt="" class="carousel-button-arrow"></a>
+						</p>
 					</div>
 				</div>
 			</div>
@@ -144,23 +134,187 @@
 			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 			<span class="sr-only">Next</span>
 		</a>
+		<div class="carousel-horizontal-divider"></div>
 	</div>
 	<!-- /.carousel -->
 
 	<div class="container">
 		<div class="row">
-			<div class="col-md-4">Cupcakes</div>
-			<div class="col-md-4">Wedding Cakes</div>
-			<div class="col-md-4">Sweets</div>
+			<div class="col-md-4 category-column">
+				<div class="category-headbox pink-bg bt">
+					<h2>Cupcakes</h2>
+					<p>Get up to 20% off</p>
+				</div>
+				<img src="images/category1-cupcakes.jpg" alt="Cupcakes">
+			</div>
+			<div class="col-md-4 category-column">
+				<div class="category-headbox yellow-bg bt">
+					<h2>Wedding Cakes</h2>
+					<p>New Arrivals</p>
+				</div>
+				<img src="images/category2-wedding-cakes.jpg" alt="Wedding Cakes">
+			</div>
+			<div class="col-md-4 category-column">
+				<div class="category-headbox pb bt">
+					<h2>Sweets</h2>
+					<p>The best selection</p>
+				</div>
+				<img src="images/category3-sweets.jpg" alt="Sweets">
+			</div>
 		</div>
 	</div>
 
-	<hr class="featurette-divider">
-	<footer>
-		<p class="pull-right"><a href="#">Back to top</a></p>
-		<p>&copy; 2016 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-	</footer>
+	<div class="container">
+		<div class="row centered">
+			<h1><span class="pt">Popular</span> Products</h1>
+		</div>
+		<div class="row">
+			<div class="col-md-3">Product 1</div>
+			<div class="col-md-3">Product 2</div>
+			<div class="col-md-3">Product 3</div>
+			<div class="col-md-3">Product 4</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3">Product 1</div>
+			<div class="col-md-3">Product 2</div>
+			<div class="col-md-3">Product 3</div>
+			<div class="col-md-3">Product 4</div>
+		</div>
+		<div class="row centered">
+			<h1><span class="pt">Special</span> Desserts</h1>
+		</div>
+		<div class="row">
+			<div class="col-md-3">Product 1</div>
+			<div class="col-md-3">Product 2</div>
+			<div class="col-md-3">Product 3</div>
+			<div class="col-md-3">Product 4</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3">Product 1</div>
+			<div class="col-md-3">Product 2</div>
+			<div class="col-md-3">Product 3</div>
+			<div class="col-md-3">Product 4</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 centered">
+				<a href="#" class="pbutton">View all Desserts</a>
+			</div>
+		</div>
+	</div>
 
+	<div id="about-row" class="container-wrapper" style="background-color:#f6f6ee;width:100%;margin-top:50px;">
+		<div class="container" style="padding:20px 0 50px 0;">
+			<div class="row centered">
+				<h1>About Us</h1>
+			</div>
+			<div class="row">
+				<div class="col-md-4 centered">
+					<img src="images/about-1.png" alt="Amazing variety of Delicacy">
+					<h3>Amazing variety of Delicacy</h3>
+					<div class="small-divider"></div>
+					<p>With a refreshing menu every day, experience a new dish inspired from cuisines across the world!</p>
+				</div>
+				<div class="col-md-4 centered">
+					<img src="images/about-2.png" alt="Amazing variety of Delicacy">
+					<h3>Earn points with every Order </h3>
+					<div class="small-divider"></div>
+					<p>Who doesn’t love something fresh? Our dishes are prepared with fresh ingredients and served from a kitchen near you.</p>
+				</div>
+				<div class="col-md-4 centered">
+					<img src="images/about-3.png" alt="Amazing variety of Delicacy">
+					<h3>Express Delivery</h3>
+					<div class="small-divider"></div>
+					<p>Food tastes best when it’s nice and hot. That’s what we do, we deliver within 45 minutes after placing your order.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="subscribe-row" class="container-wrapper" style="background-color:#fcd063;width:100%;">
+		<div class="container" style="padding: 30px 0 20px 0px;">
+			<div class="row centered">
+				<div class="col-md-1">
+					<i class="fa fa-paper-plane"></i>
+				</div>
+				<div class="col-md-5">
+					<p style="text-align:left;">Subscribe to our newsletter to receive news,<br/>updates, and another stuff by email:</p>
+				</div>
+				<div id="subscribe-container" class="col-md-6" style="text-align:right;">
+					<input type="text" placeholder="Your email address" style="margin-right:-4px;">
+					<button type="submit" class="pbutton">Subscribe</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer style="margin-top:40px;">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<img src="images/logo.png" alt="">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus consequat ex ut nisi posuere, et laoreet dolor suscipit.
+						Integer pulvinar, turpis et ultricies porttitor, massa arcu efficitur mi, a pretium mi odio id eros. Nulla leo nulla,
+						ornare pretium sapien at, feugiat pharetra ante. Integer non neque sit amet lorem placerat condimentum sed sed sem.
+						Pellentesque at suscipit lacus. Integer a tempus nunc, sed finibus nulla. Pellentesque in tristique augue.
+					</p>
+				</div>
+				<div class="col-md-2">
+					<h3>Information</h3>
+					<ul class="pt">
+						<li><a href="#">Specials</a></li>
+						<li><a href="#">New Products</a></li>
+						<li><a href="#">Popular Products</a></li>
+						<li><a href="#">Our stores</a></li>
+						<li><a href="#">Careers</a></li>
+						<li><a href="#">About us</a></li>
+					</ul>
+				</div>
+				<div class="col-md-2">
+					<h3>Categories</h3>
+					<ul class="pt">
+						<li><a href="#">Specials</a></li>
+						<li><a href="#">New Products</a></li>
+						<li><a href="#">Popular Products</a></li>
+						<li><a href="#">Our stores</a></li>
+						<li><a href="#">Careers</a></li>
+						<li><a href="#">About us</a></li>
+					</ul>
+				</div>
+				<div class="col-md-2">
+					<h3>My Account</h3>
+					<ul class="pt">
+						<li><a href="#">Specials</a></li>
+						<li><a href="#">New Products</a></li>
+						<li><a href="#">Popular Products</a></li>
+						<li><a href="#">Our stores</a></li>
+						<li><a href="#">Careers</a></li>
+						<li><a href="#">About us</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<h3>Contact Us</h3>
+					<p class="pt-10">
+						<i class="pt fa fa-phone-square"></i>
+						<span>1-800-234-5677</span>
+					</p>
+					<p class="pt-10">
+						<i class="pt fa fa-map-marker"></i> 4578 Marmora road, <br/> glasgow d04 89 gr.
+						<img src="images/map.jpg" alt="Our address on google maps" style="margin-top:40px;">
+					</p>
+				</div>
+			</div>
+		</div>
+		<div id="bottom-row">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<p>Melloe - delivering celebrations. All rights reserved - 2016</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--<hr class="featurette-divider">-->
 </body>
 
 </html>
