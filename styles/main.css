@@ -1,8 +1,9 @@
 /*Bootstrap resets*/
 p {margin: 0px;}
-/*.navbar-default {
-	background-color: white;
-}*/
+.modal-open .navbar-fixed-top,
+.modal-open .navbar-fixed-bottom {
+padding-right: 17px;
+}
 /*Bootstrap resets end*/
 
 
@@ -29,6 +30,10 @@ body {
 
 h1, h2, h3 {
 	font-family: 'AvenirBold';
+}
+
+a {
+	color:  #935c4e;
 }
 
 /*Primary text*/
@@ -222,10 +227,92 @@ h1, h2, h3 {
 }
 /*Categories row end*/
 
+/*Products row*/
+
+.products-list-row {
+	margin-top: 50px;
+}
+
+.products-list-row h5 {
+	width:80%;
+	margin:10px auto;
+}
+
+.products-list-row img {
+	border: 2px solid #935c4e;
+}
+
+.products-list-row .vendor {
+	float: left;
+}
+
+.products-list-row .price {
+	float: right;
+}
+
+.products-list-row .col-md-3 {
+	padding: 0px;
+}
+
+.full-product-wrapper {
+	border: 6px solid white;
+	height: 375px;
+	overflow: hidden;
+	padding: 5px;
+	width: 99%;
+	margin-bottom: -10px;
+}
+
+.full-product-wrapper img {
+	width: 100%;
+}
+
+.full-product-wrapper:hover {
+	border: 6px solid #925d4e;
+	background-color: white;
+	height: 475px;
+	position: absolute;
+	z-index: 99;
+	-webkit-box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.3);
+	-moz-box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.3);
+	box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.3);
+	-webkit-transition: all 100ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+
+.full-product-wrapper div.product-additional-actions {
+	width: 98%;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+.full-product-wrapper div.product-additional-actions a {
+	color: #676775;
+}
+
+.product-btn {
+	margin-top: 10px;
+	width: 70%;
+}
+
+.product-btn i {
+	margin: 0 15px 0 0px;
+	font-size: 22px;
+}
+/*Products row end*/
+
 /*About row*/
-.small-divider {
+.small-divider-x2 {
 	border-top: 1px solid #d7d7d7;
 	width:200px;
+	margin: 15px auto;
+}
+
+.small-divider {
+	border-top: 1px solid #d7d7d7;
+	width:100px;
 	margin: 15px auto;
 }
 
