@@ -301,6 +301,16 @@ a {
 	margin: 0 15px 0 0px;
 	font-size: 22px;
 }
+
+.zoom-hover-icon {
+	cursor: pointer;
+	font-size: 80px;
+	color: white;
+	opacity: .0;
+	position: absolute;
+	display: block;
+	margin: 30% 37%;
+}
 /*Products row end*/
 
 /*About row*/
