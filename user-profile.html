@@ -1,0 +1,308 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>Melloe - Delivering Celebrations</title>
+	<link rel="icon" type="image/vnd.microsoft.icon" href="images/fav.ico" />
+	<script src="scripts/external/jquery-3.1.1.min.js"></script>
+	<link href="scripts/external/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" />
+	<script src="scripts/external/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="scripts/external/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="styles/checkout-modal.css">
+	<link href="styles/carousel.css" rel="stylesheet" />
+
+	<script src="scripts/melloe.js"></script>
+
+</head>
+
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2">
+					<a href="index.html"><img src="images/logo.png" id="main-logo" alt="Melloe company logo"></a>
+				</div>
+				<div class="col-md-2 col-md-offset-3">
+					<p class="pt-30">
+						<i class="pt fa fa-phone-square"></i>
+						<span>Call us at:</span><br/>
+						<span>1-800-234-5677</span>
+					</p>
+				</div>
+				<div class="col-md-2">
+					<p class="pt-30">
+						<i class="pt fa fa-map-marker"></i> 4578 Marmora road, glasgow d04 89 gr.
+					</p>
+				</div>
+				<div class="col-md-2 col-md-offset-1 header-user-col">
+					<a href="user-profile.html" class="pb bt mct profile-circle pull-right">
+						<span class="fa fa-user circle-icon" style="left:-18px;"></span>
+					</a>
+					<a href="#" class="pb bt mct profile-circle pull-right" data-toggle="modal" data-target="#checkout-modal">
+						<span id="cart-counter">12</span>
+						<i class="fa fa-shopping-cart circle-icon fa-flip-horizontal"></i>
+					</a>
+				</div>
+			</div>
+			<div class="custom-divider"></div>
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+					aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Home</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Desserts <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li class="dropdown-header">1st category</li>
+							<li><a href="#">Chocolate Cake</a></li>
+							<li><a href="#">Bonbons</a></li>
+							<li role="separator" class="divider"></li>
+							<li class="dropdown-header">2nd category</li>
+							<li><a href="#">Chocolate Cake</a></li>
+							<li><a href="#">Bonbons</a></li>
+							<li role="separator" class="divider"></li>
+							<li class="dropdown-header">3th category</li>
+							<li><a href="#">Chocolate Cake</a></li>
+							<li><a href="#">Bonbons</a></li>
+						</ul>
+					</li>
+					<li><a href="#about">About Us</a></li>
+					<li><a href="#contact">Careers</a></li>
+				</ul>
+				<div class="pull-right pt-10">
+					Viewing menu for <a href="#" class="dashed-box" style="padding: 5px 10px;">Lower Parel, Mumbai, Maharashtra, India</a>
+				</div>
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+	</nav>
+	<div class="carousel-horizontal-divider" style="margin-top:181px;"></div>
+	<div id="user-profile-row" class="container" style="margin-top: 40px;">
+		<div class="row">
+			<div class="col-md-3">
+				<img id="user-profile-picture" src="images/user-picture.jpg" alt="">
+				<h5>Yoana Bukovska</h5>
+			</div>
+			<div class="col-md-9">
+				<div class="tabs-wrapper">
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="#profile-tab" data-toggle="tab">Profile</a></li>
+						<li><a href="#orders-tab" data-toggle="tab">Orders</a></li>
+						<li><a href="#addresses-tab" data-toggle="tab">Addresses</a></li>
+						<li><a href="#wallet-tab" data-toggle="tab">Wallet</a></li>
+						<li><a href="#promocodes-tab" data-toggle="tab">Promo Codes</a></li>
+					</ul>
+					<div class="tab-content">
+						<div class="tab-pane fade active in" id="profile-tab">
+							<table class="table table-striped table-hover ">
+								<tr>
+									<td>First Name:</td>
+									<td>Yoana</td>
+								</tr>
+								<tr>
+									<td>Last Name:</td>
+									<td>Bukovska</td>
+								</tr>
+								<tr>
+									<td>Your Email:</td>
+									<td>yoanabukovska@gmail.com</td>
+								</tr>
+								<tr>
+									<td>Mobile:</td>
+									<td>+359 888 888 777</td>
+								</tr>
+								</tbody>
+							</table>
+							<button class="pbutton pull-right"><i class="fa fa-edit" style="margin-right:10px;"></i>Edit</button>
+						</div>
+						<div class="tab-pane fade" id="orders-tab">
+							<table class="table table-striped table-hover ">
+								<thead>
+									<tr>
+										<th>Product Name</th>
+										<th>Status</th>
+										<th>Order Date</th>
+										<th>Details</th>
+									</tr>
+								</thead>
+								<tr>
+									<td>Brownies Home Sweet Home Medley Gift Box</td>
+									<td>Complete</td>
+									<td>11-10-2016 21:36</td>
+									<td><button class="pbutton-small">Details</button></td>
+								</tr>
+								<tr>
+									<td>Brownies Home Sweet Home Medley Gift Box</td>
+									<td>Complete</td>
+									<td>11-10-2016 21:36</td>
+									<td><button class="pbutton-small">Details</button></td>
+								</tr>
+								<tr class="success">
+									<td>Brownies Home Sweet Home Medley Gift Box</td>
+									<td>Active</td>
+									<td>11-10-2016 21:36</td>
+									<td><button class="cancel-button-small">Cancel</button></td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="tab-pane fade" id="addresses-tab">
+							<h5>Primary address: <a href="#" class="dashed-box">HQ USAREUR & 7A, CMR 420 Box 676</a></h5>
+							<table class="table table-striped table-hover ">
+								<thead>
+									<tr>
+										<th>Additional addresses:</th>
+										<th></th>
+									</tr>
+								</thead>
+								<tr>
+									<td>HQ USAREUR & 7A, CMR 420 Box 676</td>
+									<td><button class="pbutton-small">Choose</button></td>
+								</tr>
+								<tr>
+									<td>HQ USAREUR & 7A, CMR 420 Box 676</td>
+									<td><button class="pbutton-small">Choose</button></td>
+								</tr>
+								<tr>
+									<td>Add new address: </td>
+									<td><button class="add-button-small">Add</button></td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="tab-pane fade" id="wallet-tab">
+							<h5>You have earned: <a href="#" class="dashed-box">350</a> points!</h5>
+							<h5 style="margin-top:30px;">Learn how to get more:</h5>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus consequat ex ut nisi posuere, et laoreet dolor suscipit. Integer pulvinar, turpis et ultricies porttitor, massa arcu efficitur mi, a pretium mi odio id eros. Nulla leo nulla, ornare pretium sapien at, feugiat pharetra ante. Integer non neque sit amet lorem placerat condimentum sed sed sem. Pellentesque at suscipit lacus. Integer a tempus nunc, sed finibus nulla. Pellentesque in tristique augue.</p>
+						</div>
+						<div class="tab-pane fade" id="promocodes-tab">
+							<table class="table table-striped table-hover ">
+								<thead>
+									<tr>
+										<th>Promo codes:</th>
+										<th>Uses Left:</th>
+									</tr>
+								</thead>
+								<tr class="success">
+									<td>ASDQFWE-QWFQ-QWD</td>
+									<td>5</td>
+								</tr>
+								<tr>
+									<td>ASDQFWE-QWFQ-QWD-UF44F</td>
+									<td>0</td>
+								</tr>
+								<tr class="success">
+									<td>ASDQFWE-QWFQ-QWD-GTG545</td>
+									<td>2</td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<hr class="featurette-divider">
+	<footer style="margin-top:40px;">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<img src="images/logo.png" alt="">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus consequat ex ut nisi posuere, et laoreet dolor suscipit.
+						Integer pulvinar, turpis et ultricies porttitor, massa arcu efficitur mi, a pretium mi odio id eros. Nulla leo nulla,
+						ornare pretium sapien at, feugiat pharetra ante. Integer non neque sit amet lorem placerat condimentum sed sed sem.
+						Pellentesque at suscipit lacus. Integer a tempus nunc, sed finibus nulla. Pellentesque in tristique augue.
+					</p>
+				</div>
+				<div class="col-md-2">
+					<h3>Information</h3>
+					<ul class="pt">
+						<li><a href="#">Specials</a></li>
+						<li><a href="#">New Products</a></li>
+						<li><a href="#">Popular Products</a></li>
+						<li><a href="#">Our stores</a></li>
+						<li><a href="#">Careers</a></li>
+						<li><a href="#">About us</a></li>
+					</ul>
+				</div>
+				<div class="col-md-2">
+					<h3>Categories</h3>
+					<ul class="pt">
+						<li><a href="#">Specials</a></li>
+						<li><a href="#">New Products</a></li>
+						<li><a href="#">Popular Products</a></li>
+						<li><a href="#">Our stores</a></li>
+						<li><a href="#">Careers</a></li>
+						<li><a href="#">About us</a></li>
+					</ul>
+				</div>
+				<div class="col-md-2">
+					<h3>My Account</h3>
+					<ul class="pt">
+						<li><a href="#">Specials</a></li>
+						<li><a href="#">New Products</a></li>
+						<li><a href="#">Popular Products</a></li>
+						<li><a href="#">Our stores</a></li>
+						<li><a href="#">Careers</a></li>
+						<li><a href="#">About us</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<h3>Contact Us</h3>
+					<p class="pt-10">
+						<i class="pt fa fa-phone-square"></i>
+						<span>1-800-234-5677</span>
+					</p>
+					<p class="pt-10">
+						<i class="pt fa fa-map-marker"></i> 4578 Marmora road, <br/> glasgow d04 89 gr.
+						<img src="images/map.jpg" alt="Our address on google maps" style="margin-top:40px;">
+					</p>
+				</div>
+			</div>
+		</div>
+		<div id="bottom-row">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<p>Melloe - delivering celebrations. All rights reserved - 2016</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--Modals-->
+	<!--Checkout modal-->
+	<div class="modal fade" id="checkout-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="gridModalLabel">Order Summary</h4>
+				</div>
+				<div class="modal-body">
+					<div class="container-fluid bd-example-row">
+						<div class="row">
+							<div class="col-md-6">Col1</div>
+							<div class="col-md-6">Col2</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer centered">
+					<button class="pbutton">CHECKOUT</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

@@ -83,6 +83,30 @@ a {
 	border: none;
 }
 
+.pbutton-small {
+	background-color: #935c4e;
+	color: white;
+	padding: 2px 15px;
+	box-shadow: 0px 5px #5e372b;
+	border: none;
+}
+
+.cancel-button-small {
+	background-color: #eb4e09;
+	color: white;
+	padding: 2px 15px;
+	box-shadow: 0px 5px #ad3500;
+	border: none;
+}
+
+.add-button-small {
+	background-color: #7dba08;
+	color: white;
+	padding: 2px 15px;
+	box-shadow: 0px 5px #5c8c00;
+	border: none;
+}
+
 .centered {
 	text-align: center;
 }
@@ -397,3 +421,77 @@ footer ul li {
 	color: #91914e;
 }
 /*bottom row end*/
+
+
+
+/*Details Page*/
+
+#product-details-row img {
+	border: 2px solid #925d4e;
+}
+
+#product-details-row .details-wrapper {
+	padding: 0 0 0 30px;
+}
+
+#product-details-row .tabs-wrapper {
+	padding: 0px;
+	margin: 25px 0 30px 0px;
+}
+
+#product-details-row .social-icons a {
+	font-size: 30px;
+	margin: 0 5px 0 0px;
+}
+
+#product-details-row .nav-tabs>li.active>a{
+	border: none;
+	border-bottom: 2px solid #925d4e;
+}
+
+#product-details-row .tab-content {
+	padding: 10px 0 0 0px;
+}
+
+#product-details-row #ingredients ol {
+	padding: 0px;
+	margin: 0px 0 0 15px;
+}
+/*Details page end*/
+
+
+/*User Profile*/
+#user-profile-row {
+	min-height: 200px;
+}
+
+#user-profile-row #user-profile-picture {
+	border: 2px solid #925d4e;;
+}
+
+#user-profile-row .tabs-wrapper {
+	margin: 0 0 0 -55px;
+}
+
+#user-profile-row .tab-content {
+	padding: 10px 0 0 0px;
+}
+
+#user-profile-row .nav-tabs>li.active>a {
+	color: white;
+	background-color: #925d4e;
+}
+
+#user-profile-row .nav-tabs {
+	border-bottom: 1px solid #925d4e;
+}
+
+#user-profile-row .nav-tabs>li {
+	margin-bottom: 0px;
+}
+
+#user-profile-row .tab-content table tr:first-child td {
+	border: none;
+}
+
+/*User Profile End*/
