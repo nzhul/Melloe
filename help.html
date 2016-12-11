@@ -1,0 +1,207 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>Melloe - Delivering Celebrations</title>
+	<link rel="icon" type="image/vnd.microsoft.icon" href="images/fav.ico" />
+	<script src="scripts/external/jquery-3.1.1.min.js"></script>
+	<link href="scripts/external/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" />
+	<script src="scripts/external/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="scripts/external/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="styles/checkout-modal.css">
+	<link href="styles/carousel.css" rel="stylesheet" />
+
+	<script src="scripts/melloe.js"></script>
+	<script src="scripts/external/bootstrap-select-1.12.1/dist/js/bootstrap-select.min.js"></script>
+	<link href="scripts/external/bootstrap-select-1.12.1/dist/css/bootstrap-select.min.css" rel="stylesheet" />
+
+	<script>
+		$(document).ready(function(){
+				$('.selectpicker').selectpicker({
+				style: 'btn-info',
+				size: 4
+				});
+		});
+	</script>
+</head>
+
+<body>
+	<!--Checkout modal end-->
+	<nav class="navbar navbar-default navbar-fixed-top short-nav">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2">
+					<a href="index.html"><img src="images/logov2.png" id="main-logo" alt="Melloe company logo"></a>
+				</div>
+				<div class="col-md-2 col-md-offset-3">
+					<p class="pt-30">
+						<i class="pt fa fa-phone-square"></i>
+						<span>Call us at:</span><br/>
+						<span>1-800-234-5677</span>
+					</p>
+				</div>
+				<div class="col-md-2">
+					<p class="pt-30">
+						<i class="pt fa fa-map-marker"></i> 4578 Marmora road, glasgow d04 89 gr.
+					</p>
+				</div>
+				<div class="col-md-2 col-md-offset-1 header-user-col">
+					<a href="user-profile.html" class="pb bt mct profile-circle pull-right">
+						<span class="fa fa-user circle-icon" style="left:-18px;"></span>
+					</a>
+					<a href="#" class="pb bt mct profile-circle pull-right" data-toggle="modal" data-target="#checkout-modal">
+						<span id="cart-counter">12</span>
+						<i class="fa fa-shopping-cart circle-icon fa-flip-horizontal"></i>
+					</a>
+				</div>
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+	</nav>
+
+	<div class="container image-container">
+		<img src="images/help-page-bg-image.jpg" class="wide-background-image" alt="">
+		<div class="image-container-content">
+			<h1 style="font-size:60px;">Get in touch</h1>
+		</div>
+	</div>
+
+	<div id="melloe-form-row" class="container">
+		<div class="row">
+			<div class="col-md-7">
+				<div class="melloe-form-content">
+					<h4>Please fill out the form and we will contact you as soon as possible.</h4>
+					<form class="form-horizontal">
+						<div class="form-group">
+							<div class="col-lg-10">
+								<input type="text" class="form-control" placeholder="Name">
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-lg-10">
+								<input type="text" class="form-control" placeholder="Your Email Address">
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-lg-10">
+								<textarea class="form-control" rows="3" placeholder="Message"></textarea>
+							</div>
+						</div>
+						<img src="images/captcha-fake.jpg" alt="captcha">
+						<input type="submit" class="pbutton" value="Send">
+					</form>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<h4>Contact us via:</h4>
+				<p class="pt-30">
+					<i class="pt fa fa-phone-square"></i>
+					<span>Call us at:</span><br/>
+					<span>1-800-234-5677</span>
+				</p>
+				<p class="pt-30">
+					<i class="pt fa fa-map-marker"></i> 4578 Marmora road, glasgow d04 89 gr.
+				</p>
+				<p class="pt-30">
+					<i class="pt fa fa-envelope"></i> sales@melloe.com
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<hr class="featurette-divider">
+	<footer style="margin-top:40px;">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<img src="images/logo.png" alt="">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus consequat ex ut nisi posuere, et laoreet dolor suscipit.
+						Integer pulvinar, turpis et ultricies porttitor, massa arcu efficitur mi, a pretium mi odio id eros. Nulla leo nulla,
+						ornare pretium sapien at, feugiat pharetra ante. Integer non neque sit amet lorem placerat condimentum sed sed sem.
+						Pellentesque at suscipit lacus. Integer a tempus nunc, sed finibus nulla. Pellentesque in tristique augue.
+					</p>
+				</div>
+				<div class="col-md-2">
+					<h3>Information</h3>
+					<ul class="pt">
+						<li><a href="#">Specials</a></li>
+						<li><a href="#">New Products</a></li>
+						<li><a href="#">Popular Products</a></li>
+						<li><a href="#">Our stores</a></li>
+						<li><a href="#">Careers</a></li>
+						<li><a href="#">About us</a></li>
+					</ul>
+				</div>
+				<div class="col-md-2">
+					<h3>Categories</h3>
+					<ul class="pt">
+						<li><a href="#">Specials</a></li>
+						<li><a href="#">New Products</a></li>
+						<li><a href="#">Popular Products</a></li>
+						<li><a href="#">Our stores</a></li>
+						<li><a href="#">Careers</a></li>
+						<li><a href="#">About us</a></li>
+					</ul>
+				</div>
+				<div class="col-md-2">
+					<h3>My Account</h3>
+					<ul class="pt">
+						<li><a href="#">Specials</a></li>
+						<li><a href="#">New Products</a></li>
+						<li><a href="#">Popular Products</a></li>
+						<li><a href="#">Our stores</a></li>
+						<li><a href="#">Careers</a></li>
+						<li><a href="#">About us</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<h3>Contact Us</h3>
+					<p class="pt-10">
+						<i class="pt fa fa-phone-square"></i>
+						<span>1-800-234-5677</span>
+					</p>
+					<p class="pt-10">
+						<i class="pt fa fa-map-marker"></i> 4578 Marmora road, <br/> glasgow d04 89 gr.
+						<img src="images/map.jpg" alt="Our address on google maps" style="margin-top:40px;">
+					</p>
+				</div>
+			</div>
+		</div>
+		<div id="bottom-row">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<p>Melloe - delivering celebrations. All rights reserved - 2016</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--Modals-->
+	<!--Checkout modal-->
+	<div class="modal fade" id="checkout-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="gridModalLabel">Order Summary</h4>
+				</div>
+				<div class="modal-body">
+					<div class="container-fluid bd-example-row">
+						<div class="row">
+							<div class="col-md-6">Col1</div>
+							<div class="col-md-6">Col2</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer centered">
+					<button class="pbutton">CHECKOUT</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
