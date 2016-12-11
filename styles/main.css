@@ -626,3 +626,44 @@ footer ul li {
 }
 
 /*Terms row end*/
+
+
+/*Careers row*/
+#careers-row {
+	margin-top: 150px;
+}
+
+#careers-row .background-image {
+	position: absolute;
+	z-index: 1;
+}
+
+#careers-row .above-image-container {
+	position: relative;
+	z-index: 2;
+	padding: 20px 0 0 30px;
+	color: white;
+	width: 500px;
+}
+
+#careers-row h4 {
+	font-size: 50px;
+}
+
+#careers-row h5 {
+	font-size: 30px;
+}
+
+#careers-row .above-image-container p {
+margin-top: 20px;
+}
+
+#careers-row #skills-row {
+	padding: 0 20px 0 20px;
+}
+
+#clients-row h5 {
+	font-size: 20px;
+}
+
+/*Careers row end*/
