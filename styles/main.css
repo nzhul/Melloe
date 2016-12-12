@@ -111,6 +111,10 @@ a {
 	text-align: center;
 }
 
+.left-aligned {
+	text-align: left;
+}
+
 .pt-10 {
 	padding-top: 10px;
 }
@@ -666,4 +670,97 @@ margin-top: 20px;
 	font-size: 20px;
 }
 
+#clients-row img {
+	margin-bottom: 50px;
+	border: 1px solid #925d4e;
+}
+
+#clients-row p {
+	margin-bottom: 10px;
+}
+
 /*Careers row end*/
+
+/*Apply now row*/
+
+#apply-now-row h1 {
+	margin-top: 50px;
+	color: white;
+	text-shadow: 1px 1px #cc8922;
+}
+
+#apply-now-row button {
+	margin: 20px 0 50px 0px;
+	width: 20%;
+}
+
+/*Apply now row end*/
+
+
+/*Careers carousel */
+
+
+/* The controlsy */
+#carousel-employees .carousel-control {
+    height: 40px;
+	width: 40px;
+    background: none repeat scroll 0 0 #222222;
+    border: 4px solid #FFFFFF;
+    border-radius: 23px 23px 23px 23px;
+    margin-top: 50px;
+}
+
+#carousel-employees .carousel-control.right {
+	right: -60px;
+}
+
+#carousel-employees .carousel-control.left {
+	left: -60px;
+}
+
+/* The indicators */
+#carousel-employees .carousel-indicators {
+    display: none;
+}
+/* The colour of the indicators */
+#carousel-employees .carousel-indicators li {
+	background: #cecece;
+}
+#carousel-employees .carousel-indicators .active {
+background: #428bca;
+}
+
+#carousel-employees .thumbnail {
+    display: block;
+    padding: 4px;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+	border: none;
+    border-radius: 4px;
+    -webkit-transition: border .2s ease-in-out;
+    -o-transition: border .2s ease-in-out;
+    transition: border .2s ease-in-out;
+	opacity: .55;
+	text-decoration: none;
+}
+
+#carousel-employees .thumbnail img {
+	border: 1px solid #925d4e;
+}
+
+#carousel-employees .thumbnail:hover {
+	opacity: 1;
+}
+
+#carousel-employees .thumbnail .employee-name {
+	font-size: 20px;
+	color: #676775;
+}
+
+#carousel-employees .thumbnail p {
+	margin-top: 10px;
+	line-height: 15px;
+}
+
+/* Careers carousel end */
