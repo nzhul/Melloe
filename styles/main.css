@@ -764,3 +764,33 @@ background: #428bca;
 }
 
 /* Careers carousel end */
+
+
+/*About page  row */
+
+#about-page-row {
+	margin-top: 150px;
+}
+
+.about-page-single-row {
+	width:50%;
+	margin:0 auto;
+}
+
+.about-page-single-row .text-side {
+	background-color: white;
+	text-align: left;
+	padding: 30px;
+	height: 349px;
+}
+
+
+.about-page-single-row .image-side {
+	padding-left: 0px;
+}
+
+#about-page-row .single-row {
+	margin-bottom: 40px;
+}
+
+/*About page row end*/
