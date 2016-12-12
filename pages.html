@@ -10,19 +10,65 @@
 	<script src="scripts/external/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="scripts/external/font-awesome-4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="styles/main.css">
-	<link rel="stylesheet" href="styles/checkout-modal.css">
+	<link rel="stylesheet" href="styles/modals.css">
 	<link href="styles/carousel.css" rel="stylesheet" />
-
 	<script src="scripts/melloe.js"></script>
-
 </head>
 
 <body>
+
+	<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="login-modal-content">
+					<button class="social-login-button facebook"><i class="fa fa-facebook" aria-hidden="true"></i>Log in with Facebook</button>
+					<button class="social-login-button google"><i class="fa fa-google-plus" aria-hidden="true"></i>Log in with Google</button>
+					<hr>
+					<span class="or-word">or</span>
+					<input type="email" class="form-control" id="inputEmail" placeholder="Email">
+					<input type="password" class="form-control" id="inputPassword" placeholder="Password">
+					<p><a href="#">Forgot Password?</a></p>
+					<button class="pbutton">Log In</button>
+					<p>Don’t have an account? <a href="#">Sign up</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="login-modal-content">
+					<button class="social-login-button facebook"><i class="fa fa-facebook" aria-hidden="true"></i>Log in with Facebook</button>
+					<button class="social-login-button google"><i class="fa fa-google-plus" aria-hidden="true"></i>Log in with Google</button>
+					<hr>
+					<span class="or-word">or</span>
+					<input type="text" class="form-control" placeholder="First Name">
+					<input type="text" class="form-control" placeholder="Last Name">
+					<input type="email" class="form-control" placeholder="Email">
+					<input type="password" class="form-control" id="inputPassword" placeholder="Password">
+					<button class="pbutton">Sign Up</button>
+					<p>Already have a Melloe account ? <a href="#">Log in</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="checkoutModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="checkout-modal-content">
+					<p>Not implemented yet!</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<div class="container" style="margin-top:100px;">
 		<div class="row">
-			<div class="col-md-12">
+			<div class="col-md-8">
 				<div class="jumbotron">
-					<h2>List of all pages</h2>
+					<h2>Pages</h2>
 					<ol>
 						<li><a href="index-initial.html">Index Initial</a></li>
 						<li><a href="index.html">Products List</a></li>
@@ -32,6 +78,16 @@
 						<li><a href="about.html">About us</a></li>
 						<li><a href="help.html">Help</a></li>
 						<li><a href="terms.html">Terms and conditions</a></li>
+					</ol>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="jumbotron">
+					<h2>Modals</h2>
+					<ol>
+						<li><a href="#" data-toggle="modal" data-target="#loginModal">Login</a></li>
+						<li><a href="#" data-toggle="modal" data-target="#registerModal">Register</a></li>
+						<li><a href="#" data-toggle="modal" data-target="#checkoutModal">Checkout</a></li>
 					</ol>
 				</div>
 			</div>

@@ -1,0 +1,57 @@
+ .modal-dialog {
+	width: 320px;
+}
+
+ .login-modal-content {
+	padding: 20px;
+}
+
+ .login-modal-content .pbutton {
+	width: 100%;
+	margin: 10px 0 10px 0px;
+}
+
+ .login-modal-content .social-login-button {
+	width: 100%;
+	color: white;
+	border: none;
+	border-radius: 2px;
+	padding: 10px 20px;
+}
+
+ .login-modal-content .social-login-button i {
+	 position: relative;
+	 left: -40px;
+	 top: 3px;
+	 font-size: 20px;
+ }
+
+ .login-modal-content .social-login-button.facebook {
+	background-color: #4f73bb;
+	margin-bottom: 10px;
+}
+
+ .login-modal-content .social-login-button.google {
+	background-color: #e15541;
+}
+
+ .login-modal-content input {
+	margin-bottom: 10px;
+}
+
+ .login-modal-content .or-word {
+	position: absolute;
+	background-color: white;
+	display: block;
+	width: 30px;
+	height: 30px;
+	margin: 0 auto;
+	left: 45%;
+	top: 115px;
+	text-align: center;
+	padding: 5px;
+}
+
+.checkout-modal-content {
+	padding: 20px;
+}
