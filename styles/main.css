@@ -366,6 +366,10 @@ a {
 	font-family: 'AvenirRegular';
 }
 
+#about-row .about-text-box {
+	margin-bottom: 20px;
+}
+
 /*About row end*/
 
 
@@ -411,6 +415,15 @@ a {
     /* IE 10+ */
     color: #f7e9cc;
 }
+
+#subscribe-row .subscribe-text-box {
+	padding: 20px 0 20px 0px;
+}
+
+#subscribe-row .subscribe-input-box {
+	padding: 20px 0 20px 0px;
+}
+
 /*Subscribe row end*/
 
 /*footer*/

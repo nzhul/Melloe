@@ -4,17 +4,17 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Melloe - Delivering Celebrations</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="icon" type="image/vnd.microsoft.icon" href="images/fav.ico" />
 	<script src="scripts/external/jquery-3.1.1.min.js"></script>
 	<link href="scripts/external/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" />
 	<script src="scripts/external/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="scripts/external/font-awesome-4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="styles/main.css">
-	<link rel="stylesheet" href="styles/checkout-modal.css">
-	<link href="styles/carousel.css" rel="stylesheet" />
-
+	<link rel="stylesheet" href="styles/modals.css">
+	<link rel="stylesheet" href="styles/carousel.css" />
+	<link rel="stylesheet" href="styles/responsive.css">
 	<script src="scripts/melloe.js"></script>
-
 </head>
 
 <body>
@@ -25,14 +25,14 @@
 				<div class="col-md-2">
 					<a href="index.html"><img src="images/logo.png" id="main-logo" alt="Melloe company logo"></a>
 				</div>
-				<div class="col-md-2 col-md-offset-3">
+				<div class="col-md-2 col-md-offset-3 non-responsive-only">
 					<p class="pt-30">
 						<i class="pt fa fa-phone-square"></i>
 						<span>Call us at:</span><br/>
 						<span>1-800-234-5677</span>
 					</p>
 				</div>
-				<div class="col-md-2">
+				<div class="col-md-2 non-responsive-only">
 					<p class="pt-30">
 						<i class="pt fa fa-map-marker"></i> 4578 Marmora road, glasgow d04 89 gr.
 					</p>
@@ -40,668 +40,677 @@
 				<div class="col-md-2 col-md-offset-1 header-user-col">
 					<a href="user-profile.html" class="pb bt mct profile-circle pull-right">
 						<span class="fa fa-user circle-icon" style="left:-18px;"></span>
-					</a>
-					<a href="#" class="pb bt mct profile-circle pull-right" data-toggle="modal" data-target="#checkout-modal">
-						<span id="cart-counter">12</span>
-						<i class="fa fa-shopping-cart circle-icon fa-flip-horizontal"></i>
-					</a>
-				</div>
-			</div>
-			<div class="custom-divider"></div>
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
-					aria-controls="navbar">
+</a>
+<a href="#" class="pb bt mct profile-circle pull-right" data-toggle="modal" data-target="#checkout-modal">
+	<span id="cart-counter">12</span>
+	<i class="fa fa-shopping-cart circle-icon fa-flip-horizontal"></i>
+</a>
+</div>
+</div>
+<div class="custom-divider non-responsive-only"></div>
+<div class="navbar-header">
+	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+		aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-			</div>
-			<div id="navbar" class="navbar-collapse collapse">
-				<ul class="nav navbar-nav">
-					<li class="active"><a href="#">Home</a></li>
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Desserts <span class="caret"></span></a>
-						<ul class="dropdown-menu">
-							<li class="dropdown-header">1st category</li>
-							<li><a href="#">Chocolate Cake</a></li>
-							<li><a href="#">Bonbons</a></li>
-							<li role="separator" class="divider"></li>
-							<li class="dropdown-header">2nd category</li>
-							<li><a href="#">Chocolate Cake</a></li>
-							<li><a href="#">Bonbons</a></li>
-							<li role="separator" class="divider"></li>
-							<li class="dropdown-header">3th category</li>
-							<li><a href="#">Chocolate Cake</a></li>
-							<li><a href="#">Bonbons</a></li>
-						</ul>
-					</li>
-					<li><a href="about.html">About Us</a></li>
-					<li><a href="careers.html">Careers</a></li>
-				</ul>
-				<div class="pull-right pt-10">
-					Viewing menu for <a href="#" class="dashed-box" style="padding: 5px 10px;">Lower Parel, Mumbai, Maharashtra, India</a>
-				</div>
-			</div>
-			<!--/.nav-collapse -->
-		</div>
-	</nav>
+</div>
+<div id="navbar" class="navbar-collapse collapse">
+	<ul class="nav navbar-nav">
+		<li class="active"><a href="#">Home</a></li>
+		<li class="dropdown">
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Desserts <span class="caret"></span></a>
+			<ul class="dropdown-menu">
+				<li class="dropdown-header">1st category</li>
+				<li><a href="#">Chocolate Cake</a></li>
+				<li><a href="#">Bonbons</a></li>
+				<li role="separator" class="divider"></li>
+				<li class="dropdown-header">2nd category</li>
+				<li><a href="#">Chocolate Cake</a></li>
+				<li><a href="#">Bonbons</a></li>
+				<li role="separator" class="divider"></li>
+				<li class="dropdown-header">3th category</li>
+				<li><a href="#">Chocolate Cake</a></li>
+				<li><a href="#">Bonbons</a></li>
+			</ul>
+		</li>
+		<li><a href="about.html">About Us</a></li>
+		<li><a href="careers.html">Careers</a></li>
+	</ul>
+	<div class="pull-right pt-10">
+		Viewing menu for
+		<a href="#" class="dashed-box" style="padding: 5px 10px;">Lower Parel, Mumbai, Maharashtra, India</a>
+</div>
+</div>
+<!--/.nav-collapse -->
+</div>
+</nav>
 
-	<!-- Carousel -->
-	<div id="myCarousel" class="carousel slide" data-ride="carousel">
-		<div class="carousel-horizontal-divider"></div>
-		<!-- Indicators -->
-		<ol class="carousel-indicators">
-			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-			<li data-target="#myCarousel" data-slide-to="1"></li>
-			<li data-target="#myCarousel" data-slide-to="2"></li>
-		</ol>
-		<div class="carousel-inner" role="listbox">
-			<div class="item active">
-				<img class="first-slide" src="images/main-slider/slide1.jpg" alt="First slide">
-				<div class="container">
-					<div class="carousel-caption">
-						<h2>'Dessert is to a meal <br/> what a dress is to a woman.'</h2>
-						<p style="position:relative;left:250px;">- Béatrice Peltre</p>
-						<p>
-							<a href="#" class="carousel-button pt">Explore Desserts <img src="images/button-long-arrow.png" alt="" class="carousel-button-arrow"></a>
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="item">
-				<img class="second-slide" src="images/main-slider/slide1.jpg" alt="Second slide">
-				<div class="container">
-					<div class="carousel-caption">
-						<h2>'Dessert is to a meal <br/> what a dress is to a woman.'</h2>
-						<p style="position:relative;left:250px;">- Béatrice Peltre</p>
-						<p>
-							<a href="#" class="carousel-button pt">Explore Desserts <img src="images/button-long-arrow.png" alt="" class="carousel-button-arrow"></a>
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="item">
-				<img class="third-slide" src="images/main-slider/slide1.jpg" alt="Third slide">
-				<div class="container">
-					<div class="carousel-caption">
-						<h2>'Dessert is to a meal <br/> what a dress is to a woman.'</h2>
-						<p style="position:relative;left:250px;">- Béatrice Peltre</p>
-						<p>
-							<a href="#" class="carousel-button pt">Explore Desserts <img src="images/button-long-arrow.png" alt="" class="carousel-button-arrow"></a>
-						</p>
-					</div>
-				</div>
-			</div>
+<!-- Carousel -->
+<div id="myCarousel" class="carousel slide non-responsive-only" data-ride="carousel">
+	<div class="carousel-horizontal-divider"></div>
+	<!-- Indicators -->
+	<ol class="carousel-indicators">
+		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		<li data-target="#myCarousel" data-slide-to="1"></li>
+		<li data-target="#myCarousel" data-slide-to="2"></li>
+	</ol>
+	<div class="carousel-inner" role="listbox">
+		<div class="item active">
+			<img class="first-slide" src="images/main-slider/slide1.jpg" alt="First slide">
+			<div class="container">
+				<div class="carousel-caption">
+					<h2>'Dessert is to a meal <br/> what a dress is to a woman.'</h2>
+					<p style="position:relative;left:250px;">- Béatrice Peltre</p>
+<p>
+	<a href="#" class="carousel-button pt">Explore Desserts <img src="images/button-long-arrow.png" alt="" class="carousel-button-arrow"></a>
+</p>
+</div>
+</div>
+</div>
+<div class="item">
+	<img class="second-slide" src="images/main-slider/slide1.jpg" alt="Second slide">
+	<div class="container">
+		<div class="carousel-caption">
+			<h2>'Dessert is to a meal <br/> what a dress is to a woman.'</h2>
+			<p style="position:relative;left:250px;">- Béatrice Peltre</p>
+<p>
+	<a href="#" class="carousel-button pt">Explore Desserts <img src="images/button-long-arrow.png" alt="" class="carousel-button-arrow"></a>
+</p>
+</div>
+</div>
+</div>
+<div class="item">
+	<img class="third-slide" src="images/main-slider/slide1.jpg" alt="Third slide">
+	<div class="container">
+		<div class="carousel-caption">
+			<h2>'Dessert is to a meal <br/> what a dress is to a woman.'</h2>
+			<p style="position:relative;left:250px;">- Béatrice Peltre</p>
+<p>
+	<a href="#" class="carousel-button pt">Explore Desserts <img src="images/button-long-arrow.png" alt="" class="carousel-button-arrow"></a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+	<span class="melloe-carousel-control-left"></span>
+	<!--<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
+	<span class="sr-only">Previous</span>
+</a>
+<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+	<span class="melloe-carousel-control-right"></span>
+	<!--<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
+	<span class="sr-only">Next</span>
+</a>
+<div class="carousel-horizontal-divider"></div>
+</div>
+<!-- /.carousel -->
+
+<div class="container index-categories-row">
+	<div class="row centered responsive-only" style="margin: 0 0 20px 0px;">
+<h1><span class="pt">Choose</span> From</h1>
+<div class="small-divider"></div>
+</div>
+<div class="row">
+	<div class="col-md-4 category-column">
+		<div class="category-headbox pink-bg bt">
+			<h2>Cupcakes</h2>
+			<p>Get up to 20% off</p>
 		</div>
-		<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-			<span class="melloe-carousel-control-left"></span>
-			<!--<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
-			<span class="sr-only">Previous</span>
-		</a>
-		<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-			<span class="melloe-carousel-control-right"></span>
-			<!--<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
-			<span class="sr-only">Next</span>
-		</a>
-		<div class="carousel-horizontal-divider"></div>
+		<img src="images/category1-cupcakes.jpg" alt="Cupcakes">
 	</div>
-	<!-- /.carousel -->
+	<div class="col-md-4 category-column">
+		<div class="category-headbox yellow-bg bt">
+			<h2>Wedding Cakes</h2>
+			<p>New Arrivals</p>
+		</div>
+		<img src="images/category2-wedding-cakes.jpg" alt="Wedding Cakes">
+	</div>
+	<div class="col-md-4 category-column">
+		<div class="category-headbox pb bt">
+			<h2>Sweets</h2>
+			<p>The best selection</p>
+		</div>
+		<img src="images/category3-sweets.jpg" alt="Sweets">
+	</div>
+</div>
+</div>
 
+<div class="container" style="margin-top: 45px;">
+<div class="row centered">
+	<h1><span class="pt">Popular</span> Products</h1>
+	<div class="small-divider"></div>
+</div>
+<div class="row centered products-list-row">
+	<div class="col-md-3">
+		<div class="full-product-wrapper">
+			<a href="product-details.html" class="thumbnail-link">
+				<img src="images/products/product1.jpg" alt="Brownies Home Sweet Home Medley Gift Box">
+			</a>
+			<a href="#">
+				<h5>Brownies Home Sweet Home Medley Gift Box</h5>
+			</a>
+			<div class="small-divider"></div>
+			<p class="vendor">Vendor: <a href="#">Nestle</a> </p>
+			<p class="price">₹ 220 / 1 kg</p><br>
+			<button class="pbutton product-btn"><i class="fa fa-cart-plus"></i>Add to cart</button>
+			<div class="product-additional-actions">
+				<div class="pull-left">
+					<a href="#"><i class="fa fa-thumbs-up"></i>Like</a>&nbsp;
+					<a href="#"><i class="fa fa-comments-o"></i> Comment</a>
+				</div>
+				<div class="pull-right">
+					<i class="fa fa-truck"></i> 30 min
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-3">
+		<div class="full-product-wrapper">
+			<a href="product-details.html" class="thumbnail-link">
+				<img src="images/products/product2.jpg" alt="Brownies Home Sweet Home Medley Gift Box">
+			</a>
+			<a href="#">
+				<h5>Brownies Home Sweet Home Medley Gift Box</h5>
+			</a>
+			<div class="small-divider"></div>
+			<p class="vendor">Vendor: <a href="#">Nestle</a> </p>
+			<p class="price">₹ 220 / 1 kg</p><br>
+			<button class="pbutton product-btn"><i class="fa fa-cart-plus"></i>Add to cart</button>
+			<div class="product-additional-actions">
+				<div class="pull-left">
+					<a href="#"><i class="fa fa-thumbs-up"></i>Like</a>&nbsp;
+					<a href="#"><i class="fa fa-comments-o"></i> Comment</a>
+				</div>
+				<div class="pull-right">
+					<i class="fa fa-truck"></i> 30 min
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-3">
+		<div class="full-product-wrapper">
+			<a href="product-details.html" class="thumbnail-link">
+				<img src="images/products/product3.jpg" alt="Brownies Home Sweet Home Medley Gift Box">
+			</a>
+			<a href="#">
+				<h5>Brownies Home Sweet Home Medley Gift Box</h5>
+			</a>
+			<div class="small-divider"></div>
+			<p class="vendor">Vendor: <a href="#">Nestle</a> </p>
+			<p class="price">₹ 220 / 1 kg</p><br>
+			<button class="pbutton product-btn"><i class="fa fa-cart-plus"></i>Add to cart</button>
+			<div class="product-additional-actions">
+				<div class="pull-left">
+					<a href="#"><i class="fa fa-thumbs-up"></i>Like</a>&nbsp;
+					<a href="#"><i class="fa fa-comments-o"></i> Comment</a>
+				</div>
+				<div class="pull-right">
+					<i class="fa fa-truck"></i> 30 min
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-3">
+		<div class="full-product-wrapper">
+			<a href="product-details.html" class="thumbnail-link">
+				<img src="images/products/product4.jpg" alt="Brownies Home Sweet Home Medley Gift Box">
+			</a>
+			<a href="#">
+				<h5>Brownies Home Sweet Home Medley Gift Box</h5>
+			</a>
+			<div class="small-divider"></div>
+			<p class="vendor">Vendor: <a href="#">Nestle</a> </p>
+			<p class="price">₹ 220 / 1 kg</p><br>
+			<button class="pbutton product-btn"><i class="fa fa-cart-plus"></i>Add to cart</button>
+			<div class="product-additional-actions">
+				<div class="pull-left">
+					<a href="#"><i class="fa fa-thumbs-up"></i>Like</a>&nbsp;
+					<a href="#"><i class="fa fa-comments-o"></i> Comment</a>
+				</div>
+				<div class="pull-right">
+					<i class="fa fa-truck"></i> 30 min
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="row centered products-list-row">
+	<div class="col-md-3">
+		<div class="full-product-wrapper">
+			<a href="product-details.html" class="thumbnail-link">
+				<img src="images/products/product5.jpg" alt="Brownies Home Sweet Home Medley Gift Box">
+			</a>
+			<a href="#">
+				<h5>Brownies Home Sweet Home Medley Gift Box</h5>
+			</a>
+			<div class="small-divider"></div>
+			<p class="vendor">Vendor: <a href="#">Nestle</a> </p>
+			<p class="price">₹ 220 / 1 kg</p><br>
+			<button class="pbutton product-btn"><i class="fa fa-cart-plus"></i>Add to cart</button>
+			<div class="product-additional-actions">
+				<div class="pull-left">
+					<a href="#"><i class="fa fa-thumbs-up"></i>Like</a>&nbsp;
+					<a href="#"><i class="fa fa-comments-o"></i> Comment</a>
+				</div>
+				<div class="pull-right">
+					<i class="fa fa-truck"></i> 30 min
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-3">
+		<div class="full-product-wrapper">
+			<a href="product-details.html" class="thumbnail-link">
+				<img src="images/products/product6.jpg" alt="Brownies Home Sweet Home Medley Gift Box">
+			</a>
+			<a href="#">
+				<h5>Brownies Home Sweet Home Medley Gift Box</h5>
+			</a>
+			<div class="small-divider"></div>
+			<p class="vendor">Vendor: <a href="#">Nestle</a> </p>
+			<p class="price">₹ 220 / 1 kg</p><br>
+			<button class="pbutton product-btn"><i class="fa fa-cart-plus"></i>Add to cart</button>
+			<div class="product-additional-actions">
+				<div class="pull-left">
+					<a href="#"><i class="fa fa-thumbs-up"></i>Like</a>&nbsp;
+					<a href="#"><i class="fa fa-comments-o"></i> Comment</a>
+				</div>
+				<div class="pull-right">
+					<i class="fa fa-truck"></i> 30 min
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-3">
+		<div class="full-product-wrapper">
+			<a href="product-details.html" class="thumbnail-link">
+				<img src="images/products/product7.jpg" alt="Brownies Home Sweet Home Medley Gift Box">
+			</a>
+			<a href="#">
+				<h5>Brownies Home Sweet Home Medley Gift Box</h5>
+			</a>
+			<div class="small-divider"></div>
+			<p class="vendor">Vendor: <a href="#">Nestle</a> </p>
+			<p class="price">₹ 220 / 1 kg</p><br>
+			<button class="pbutton product-btn"><i class="fa fa-cart-plus"></i>Add to cart</button>
+			<div class="product-additional-actions">
+				<div class="pull-left">
+					<a href="#"><i class="fa fa-thumbs-up"></i>Like</a>&nbsp;
+					<a href="#"><i class="fa fa-comments-o"></i> Comment</a>
+				</div>
+				<div class="pull-right">
+					<i class="fa fa-truck"></i> 30 min
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-3">
+		<div class="full-product-wrapper">
+			<a href="product-details.html" class="thumbnail-link">
+				<img src="images/products/product8.jpg" alt="Brownies Home Sweet Home Medley Gift Box">
+			</a>
+			<a href="#">
+				<h5>Brownies Home Sweet Home Medley Gift Box</h5>
+			</a>
+			<div class="small-divider"></div>
+			<p class="vendor">Vendor: <a href="#">Nestle</a> </p>
+			<p class="price">₹ 220 / 1 kg</p><br>
+			<button class="pbutton product-btn"><i class="fa fa-cart-plus"></i>Add to cart</button>
+			<div class="product-additional-actions">
+				<div class="pull-left">
+					<a href="#"><i class="fa fa-thumbs-up"></i>Like</a>&nbsp;
+					<a href="#"><i class="fa fa-comments-o"></i> Comment</a>
+				</div>
+				<div class="pull-right">
+					<i class="fa fa-truck"></i> 30 min
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="row centered" style="margin-top:45px;">
+<h1><span class="pt">Special</span> Desserts</h1>
+<div class="small-divider"></div>
+</div>
+<div class="row centered products-list-row">
+	<div class="col-md-3">
+		<div class="full-product-wrapper">
+			<a href="product-details.html" class="thumbnail-link">
+				<img src="images/products/product1.jpg" alt="Brownies Home Sweet Home Medley Gift Box">
+			</a>
+			<a href="#">
+				<h5>Brownies Home Sweet Home Medley Gift Box</h5>
+			</a>
+			<div class="small-divider"></div>
+			<p class="vendor">Vendor: <a href="#">Nestle</a> </p>
+			<p class="price">₹ 220 / 1 kg</p><br>
+			<button class="pbutton product-btn"><i class="fa fa-cart-plus"></i>Add to cart</button>
+			<div class="product-additional-actions">
+				<div class="pull-left">
+					<a href="#"><i class="fa fa-thumbs-up"></i>Like</a>&nbsp;
+					<a href="#"><i class="fa fa-comments-o"></i> Comment</a>
+				</div>
+				<div class="pull-right">
+					<i class="fa fa-truck"></i> 30 min
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-3">
+		<div class="full-product-wrapper">
+			<a href="product-details.html" class="thumbnail-link">
+				<img src="images/products/product2.jpg" alt="Brownies Home Sweet Home Medley Gift Box">
+			</a>
+			<a href="#">
+				<h5>Brownies Home Sweet Home Medley Gift Box</h5>
+			</a>
+			<div class="small-divider"></div>
+			<p class="vendor">Vendor: <a href="#">Nestle</a> </p>
+			<p class="price">₹ 220 / 1 kg</p><br>
+			<button class="pbutton product-btn"><i class="fa fa-cart-plus"></i>Add to cart</button>
+			<div class="product-additional-actions">
+				<div class="pull-left">
+					<a href="#"><i class="fa fa-thumbs-up"></i>Like</a>&nbsp;
+					<a href="#"><i class="fa fa-comments-o"></i> Comment</a>
+				</div>
+				<div class="pull-right">
+					<i class="fa fa-truck"></i> 30 min
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-3">
+		<div class="full-product-wrapper">
+			<a href="product-details.html" class="thumbnail-link">
+				<img src="images/products/product3.jpg" alt="Brownies Home Sweet Home Medley Gift Box">
+			</a>
+			<a href="#">
+				<h5>Brownies Home Sweet Home Medley Gift Box</h5>
+			</a>
+			<div class="small-divider"></div>
+			<p class="vendor">Vendor: <a href="#">Nestle</a> </p>
+			<p class="price">₹ 220 / 1 kg</p><br>
+			<button class="pbutton product-btn"><i class="fa fa-cart-plus"></i>Add to cart</button>
+			<div class="product-additional-actions">
+				<div class="pull-left">
+					<a href="#"><i class="fa fa-thumbs-up"></i>Like</a>&nbsp;
+					<a href="#"><i class="fa fa-comments-o"></i> Comment</a>
+				</div>
+				<div class="pull-right">
+					<i class="fa fa-truck"></i> 30 min
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-3">
+		<div class="full-product-wrapper">
+			<a href="product-details.html" class="thumbnail-link">
+				<img src="images/products/product4.jpg" alt="Brownies Home Sweet Home Medley Gift Box">
+			</a>
+			<a href="#">
+				<h5>Brownies Home Sweet Home Medley Gift Box</h5>
+			</a>
+			<div class="small-divider"></div>
+			<p class="vendor">Vendor: <a href="#">Nestle</a> </p>
+			<p class="price">₹ 220 / 1 kg</p><br>
+			<button class="pbutton product-btn"><i class="fa fa-cart-plus"></i>Add to cart</button>
+			<div class="product-additional-actions">
+				<div class="pull-left">
+					<a href="#"><i class="fa fa-thumbs-up"></i>Like</a>&nbsp;
+					<a href="#"><i class="fa fa-comments-o"></i> Comment</a>
+				</div>
+				<div class="pull-right">
+					<i class="fa fa-truck"></i> 30 min
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="row centered products-list-row">
+	<div class="col-md-3">
+		<div class="full-product-wrapper">
+			<a href="product-details.html" class="thumbnail-link">
+				<img src="images/products/product5.jpg" alt="Brownies Home Sweet Home Medley Gift Box">
+			</a>
+			<a href="#">
+				<h5>Brownies Home Sweet Home Medley Gift Box</h5>
+			</a>
+			<div class="small-divider"></div>
+			<p class="vendor">Vendor: <a href="#">Nestle</a> </p>
+			<p class="price">₹ 220 / 1 kg</p><br>
+			<button class="pbutton product-btn"><i class="fa fa-cart-plus"></i>Add to cart</button>
+			<div class="product-additional-actions">
+				<div class="pull-left">
+					<a href="#"><i class="fa fa-thumbs-up"></i>Like</a>&nbsp;
+					<a href="#"><i class="fa fa-comments-o"></i> Comment</a>
+				</div>
+				<div class="pull-right">
+					<i class="fa fa-truck"></i> 30 min
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-3">
+		<div class="full-product-wrapper">
+			<a href="product-details.html" class="thumbnail-link">
+				<img src="images/products/product6.jpg" alt="Brownies Home Sweet Home Medley Gift Box">
+			</a>
+			<a href="#">
+				<h5>Brownies Home Sweet Home Medley Gift Box</h5>
+			</a>
+			<div class="small-divider"></div>
+			<p class="vendor">Vendor: <a href="#">Nestle</a> </p>
+			<p class="price">₹ 220 / 1 kg</p><br>
+			<button class="pbutton product-btn"><i class="fa fa-cart-plus"></i>Add to cart</button>
+			<div class="product-additional-actions">
+				<div class="pull-left">
+					<a href="#"><i class="fa fa-thumbs-up"></i>Like</a>&nbsp;
+					<a href="#"><i class="fa fa-comments-o"></i> Comment</a>
+				</div>
+				<div class="pull-right">
+					<i class="fa fa-truck"></i> 30 min
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-3">
+		<div class="full-product-wrapper">
+			<a href="product-details.html" class="thumbnail-link">
+				<img src="images/products/product7.jpg" alt="Brownies Home Sweet Home Medley Gift Box">
+			</a>
+			<a href="#">
+				<h5>Brownies Home Sweet Home Medley Gift Box</h5>
+			</a>
+			<div class="small-divider"></div>
+			<p class="vendor">Vendor: <a href="#">Nestle</a> </p>
+			<p class="price">₹ 220 / 1 kg</p><br>
+			<button class="pbutton product-btn"><i class="fa fa-cart-plus"></i>Add to cart</button>
+			<div class="product-additional-actions">
+				<div class="pull-left">
+					<a href="#"><i class="fa fa-thumbs-up"></i>Like</a>&nbsp;
+					<a href="#"><i class="fa fa-comments-o"></i> Comment</a>
+				</div>
+				<div class="pull-right">
+					<i class="fa fa-truck"></i> 30 min
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-3">
+		<div class="full-product-wrapper">
+			<a href="product-details.html" class="thumbnail-link">
+				<img src="images/products/product8.jpg" alt="Brownies Home Sweet Home Medley Gift Box">
+			</a>
+			<a href="#">
+				<h5>Brownies Home Sweet Home Medley Gift Box</h5>
+			</a>
+			<div class="small-divider"></div>
+			<p class="vendor">Vendor: <a href="#">Nestle</a> </p>
+			<p class="price">₹ 220 / 1 kg</p><br>
+			<button class="pbutton product-btn"><i class="fa fa-cart-plus"></i>Add to cart</button>
+			<div class="product-additional-actions">
+				<div class="pull-left">
+					<a href="#"><i class="fa fa-thumbs-up"></i>Like</a>&nbsp;
+					<a href="#"><i class="fa fa-comments-o"></i> Comment</a>
+				</div>
+				<div class="pull-right">
+					<i class="fa fa-truck"></i> 30 min
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="row" style="margin-top:45px;">
+<div class="col-md-12 centered">
+	<a href="#" class="pbutton">View all Desserts</a>
+</div>
+</div>
+</div>
+
+<div id="about-row" class="container-wrapper" style="background-color:#f6f6ee;width:100%;margin-top:50px;">
+<div class="container">
+	<div class="row centered">
+		<h1>About Us</h1>
+	</div>
+	<div class="row">
+		<div class="col-md-4 centered">
+			<img src="images/about-1.png" alt="Amazing variety of Delicacy">
+			<h3>Amazing variety of Delicacy</h3>
+			<div class="small-divider-x2"></div>
+			<p class="about-text-box">With a refreshing menu every day, experience a new dish inspired from cuisines across the world!</p>
+		</div>
+		<div class="col-md-4 centered">
+			<img src="images/about-2.png" alt="Amazing variety of Delicacy">
+			<h3>Earn points with every Order </h3>
+			<div class="small-divider-x2"></div>
+			<p class="about-text-box">Who doesn’t love something fresh? Our dishes are prepared with fresh ingredients and served from a kitchen near you.</p>
+		</div>
+		<div class="col-md-4 centered">
+			<img src="images/about-3.png" alt="Amazing variety of Delicacy">
+			<h3>Express Delivery</h3>
+			<div class="small-divider-x2"></div>
+			<p class="about-text-box">Food tastes best when it’s nice and hot. That’s what we do, we deliver within 45 minutes after placing your order.</p>
+		</div>
+	</div>
+</div>
+</div>
+
+<div id="subscribe-row" class="container-wrapper" style="background-color:#fcd063;width:100%;">
+<div class="container">
+	<div class="row centered">
+		<div class="col-md-1">
+			<div class="subscribe-text-box">
+				<i class="fa fa-paper-plane"></i>
+			</div>
+		</div>
+		<div class="col-md-5">
+			<p class="subscribe-text-box" style="text-align:left;">Subscribe to our newsletter to receive news,<br/>updates, and another stuff by email:</p>
+		</div>
+<div id="subscribe-container" class="col-md-6" style="text-align:right;">
+	<div class="subscribe-input-box">
+		<input type="text" placeholder="Your email address" style="margin-right:-4px;">
+		<button type="submit" class="pbutton">Subscribe</button>
+	</div>
+</div>
+</div>
+</div>
+</div>
+
+<footer style="margin-top:40px;">
+<div class="container">
+	<div class="row">
+		<div class="col-md-3">
+			<img src="images/logo.png" alt="">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus consequat ex ut nisi posuere, et laoreet dolor suscipit.
+				Integer pulvinar, turpis et ultricies porttitor, massa arcu efficitur mi, a pretium mi odio id eros. Nulla leo nulla,
+				ornare pretium sapien at, feugiat pharetra ante. Integer non neque sit amet lorem placerat condimentum sed sed sem. Pellentesque
+				at suscipit lacus. Integer a tempus nunc, sed finibus nulla. Pellentesque in tristique augue.
+			</p>
+		</div>
+		<div class="col-md-2">
+			<h3>Information</h3>
+			<ul class="pt">
+				<li><a href="#">Specials</a></li>
+				<li><a href="#">New Products</a></li>
+				<li><a href="#">Popular Products</a></li>
+				<li><a href="#">Our stores</a></li>
+				<li><a href="careers.html">Careers</a></li>
+				<li><a href="#">About us</a></li>
+			</ul>
+		</div>
+		<div class="col-md-2">
+			<h3>Categories</h3>
+			<ul class="pt">
+				<li><a href="#">Specials</a></li>
+				<li><a href="#">New Products</a></li>
+				<li><a href="#">Popular Products</a></li>
+				<li><a href="#">Our stores</a></li>
+				<li><a href="careers.html">Careers</a></li>
+				<li><a href="#">About us</a></li>
+			</ul>
+		</div>
+		<div class="col-md-2">
+			<h3>My Account</h3>
+			<ul class="pt">
+				<li><a href="#">Specials</a></li>
+				<li><a href="#">New Products</a></li>
+				<li><a href="#">Popular Products</a></li>
+				<li><a href="#">Our stores</a></li>
+				<li><a href="careers.html">Careers</a></li>
+				<li><a href="#">About us</a></li>
+			</ul>
+		</div>
+		<div class="col-md-3">
+			<h3>Contact Us</h3>
+			<p class="pt-10">
+				<i class="pt fa fa-phone-square"></i>
+				<span>1-800-234-5677</span>
+			</p>
+			<p class="pt-10">
+				<i class="pt fa fa-map-marker"></i> 4578 Marmora road, <br/> glasgow d04 89 gr.
+				<img src="images/map.jpg" alt="Our address on google maps" style="margin-top:40px;">
+</p>
+</div>
+</div>
+</div>
+<div id="bottom-row">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-4 category-column">
-				<div class="category-headbox pink-bg bt">
-					<h2>Cupcakes</h2>
-					<p>Get up to 20% off</p>
-				</div>
-				<img src="images/category1-cupcakes.jpg" alt="Cupcakes">
-			</div>
-			<div class="col-md-4 category-column">
-				<div class="category-headbox yellow-bg bt">
-					<h2>Wedding Cakes</h2>
-					<p>New Arrivals</p>
-				</div>
-				<img src="images/category2-wedding-cakes.jpg" alt="Wedding Cakes">
-			</div>
-			<div class="col-md-4 category-column">
-				<div class="category-headbox pb bt">
-					<h2>Sweets</h2>
-					<p>The best selection</p>
-				</div>
-				<img src="images/category3-sweets.jpg" alt="Sweets">
+			<div class="col-md-12">
+				<p>Melloe - delivering celebrations. All rights reserved - 2016</p>
 			</div>
 		</div>
 	</div>
-
-	<div class="container" style="margin-top: 45px;">
-		<div class="row centered">
-			<h1><span class="pt">Popular</span> Products</h1>
-			<div class="small-divider"></div>
-		</div>
-		<div class="row centered products-list-row">
-			<div class="col-md-3">
-				<div class="full-product-wrapper">
-					<a href="product-details.html" class="thumbnail-link">
-						<img src="images/products/product1.jpg" alt="Brownies Home Sweet Home Medley Gift Box">
-					</a>
-					<a href="#">
-						<h5>Brownies Home Sweet Home Medley Gift Box</h5>
-					</a>
-					<div class="small-divider"></div>
-					<p class="vendor">Vendor: <a href="#">Nestle</a> </p>
-					<p class="price">₹ 220 / 1 kg</p><br>
-					<button class="pbutton product-btn"><i class="fa fa-cart-plus"></i>Add to cart</button>
-					<div class="product-additional-actions">
-						<div class="pull-left">
-							<a href="#"><i class="fa fa-thumbs-up"></i>Like</a>&nbsp;
-							<a href="#"><i class="fa fa-comments-o"></i> Comment</a>
-						</div>
-						<div class="pull-right">
-							<i class="fa fa-truck"></i> 30 min
-						</div>
+</div>
+</footer>
+<!--<hr class="featurette-divider">-->
+<!--Modals-->
+<!--Checkout modal-->
+<div class="modal fade" id="checkout-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="gridModalLabel">Order Summary</h4>
+			</div>
+			<div class="modal-body">
+				<div class="container-fluid bd-example-row">
+					<div class="row">
+						<div class="col-md-6">Col1</div>
+						<div class="col-md-6">Col2</div>
 					</div>
 				</div>
 			</div>
-			<div class="col-md-3">
-				<div class="full-product-wrapper">
-					<a href="product-details.html" class="thumbnail-link">
-						<img src="images/products/product2.jpg" alt="Brownies Home Sweet Home Medley Gift Box">
-					</a>
-					<a href="#">
-						<h5>Brownies Home Sweet Home Medley Gift Box</h5>
-					</a>
-					<div class="small-divider"></div>
-					<p class="vendor">Vendor: <a href="#">Nestle</a> </p>
-					<p class="price">₹ 220 / 1 kg</p><br>
-					<button class="pbutton product-btn"><i class="fa fa-cart-plus"></i>Add to cart</button>
-					<div class="product-additional-actions">
-						<div class="pull-left">
-							<a href="#"><i class="fa fa-thumbs-up"></i>Like</a>&nbsp;
-							<a href="#"><i class="fa fa-comments-o"></i> Comment</a>
-						</div>
-						<div class="pull-right">
-							<i class="fa fa-truck"></i> 30 min
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="full-product-wrapper">
-					<a href="product-details.html" class="thumbnail-link">
-						<img src="images/products/product3.jpg" alt="Brownies Home Sweet Home Medley Gift Box">
-					</a>
-					<a href="#">
-						<h5>Brownies Home Sweet Home Medley Gift Box</h5>
-					</a>
-					<div class="small-divider"></div>
-					<p class="vendor">Vendor: <a href="#">Nestle</a> </p>
-					<p class="price">₹ 220 / 1 kg</p><br>
-					<button class="pbutton product-btn"><i class="fa fa-cart-plus"></i>Add to cart</button>
-					<div class="product-additional-actions">
-						<div class="pull-left">
-							<a href="#"><i class="fa fa-thumbs-up"></i>Like</a>&nbsp;
-							<a href="#"><i class="fa fa-comments-o"></i> Comment</a>
-						</div>
-						<div class="pull-right">
-							<i class="fa fa-truck"></i> 30 min
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="full-product-wrapper">
-					<a href="product-details.html" class="thumbnail-link">
-						<img src="images/products/product4.jpg" alt="Brownies Home Sweet Home Medley Gift Box">
-					</a>
-					<a href="#">
-						<h5>Brownies Home Sweet Home Medley Gift Box</h5>
-					</a>
-					<div class="small-divider"></div>
-					<p class="vendor">Vendor: <a href="#">Nestle</a> </p>
-					<p class="price">₹ 220 / 1 kg</p><br>
-					<button class="pbutton product-btn"><i class="fa fa-cart-plus"></i>Add to cart</button>
-					<div class="product-additional-actions">
-						<div class="pull-left">
-							<a href="#"><i class="fa fa-thumbs-up"></i>Like</a>&nbsp;
-							<a href="#"><i class="fa fa-comments-o"></i> Comment</a>
-						</div>
-						<div class="pull-right">
-							<i class="fa fa-truck"></i> 30 min
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row centered products-list-row">
-			<div class="col-md-3">
-				<div class="full-product-wrapper">
-					<a href="product-details.html" class="thumbnail-link">
-						<img src="images/products/product5.jpg" alt="Brownies Home Sweet Home Medley Gift Box">
-					</a>
-					<a href="#">
-						<h5>Brownies Home Sweet Home Medley Gift Box</h5>
-					</a>
-					<div class="small-divider"></div>
-					<p class="vendor">Vendor: <a href="#">Nestle</a> </p>
-					<p class="price">₹ 220 / 1 kg</p><br>
-					<button class="pbutton product-btn"><i class="fa fa-cart-plus"></i>Add to cart</button>
-					<div class="product-additional-actions">
-						<div class="pull-left">
-							<a href="#"><i class="fa fa-thumbs-up"></i>Like</a>&nbsp;
-							<a href="#"><i class="fa fa-comments-o"></i> Comment</a>
-						</div>
-						<div class="pull-right">
-							<i class="fa fa-truck"></i> 30 min
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="full-product-wrapper">
-					<a href="product-details.html" class="thumbnail-link">
-						<img src="images/products/product6.jpg" alt="Brownies Home Sweet Home Medley Gift Box">
-					</a>
-					<a href="#">
-						<h5>Brownies Home Sweet Home Medley Gift Box</h5>
-					</a>
-					<div class="small-divider"></div>
-					<p class="vendor">Vendor: <a href="#">Nestle</a> </p>
-					<p class="price">₹ 220 / 1 kg</p><br>
-					<button class="pbutton product-btn"><i class="fa fa-cart-plus"></i>Add to cart</button>
-					<div class="product-additional-actions">
-						<div class="pull-left">
-							<a href="#"><i class="fa fa-thumbs-up"></i>Like</a>&nbsp;
-							<a href="#"><i class="fa fa-comments-o"></i> Comment</a>
-						</div>
-						<div class="pull-right">
-							<i class="fa fa-truck"></i> 30 min
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="full-product-wrapper">
-					<a href="product-details.html" class="thumbnail-link">
-						<img src="images/products/product7.jpg" alt="Brownies Home Sweet Home Medley Gift Box">
-					</a>
-					<a href="#">
-						<h5>Brownies Home Sweet Home Medley Gift Box</h5>
-					</a>
-					<div class="small-divider"></div>
-					<p class="vendor">Vendor: <a href="#">Nestle</a> </p>
-					<p class="price">₹ 220 / 1 kg</p><br>
-					<button class="pbutton product-btn"><i class="fa fa-cart-plus"></i>Add to cart</button>
-					<div class="product-additional-actions">
-						<div class="pull-left">
-							<a href="#"><i class="fa fa-thumbs-up"></i>Like</a>&nbsp;
-							<a href="#"><i class="fa fa-comments-o"></i> Comment</a>
-						</div>
-						<div class="pull-right">
-							<i class="fa fa-truck"></i> 30 min
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="full-product-wrapper">
-					<a href="product-details.html" class="thumbnail-link">
-						<img src="images/products/product8.jpg" alt="Brownies Home Sweet Home Medley Gift Box">
-					</a>
-					<a href="#">
-						<h5>Brownies Home Sweet Home Medley Gift Box</h5>
-					</a>
-					<div class="small-divider"></div>
-					<p class="vendor">Vendor: <a href="#">Nestle</a> </p>
-					<p class="price">₹ 220 / 1 kg</p><br>
-					<button class="pbutton product-btn"><i class="fa fa-cart-plus"></i>Add to cart</button>
-					<div class="product-additional-actions">
-						<div class="pull-left">
-							<a href="#"><i class="fa fa-thumbs-up"></i>Like</a>&nbsp;
-							<a href="#"><i class="fa fa-comments-o"></i> Comment</a>
-						</div>
-						<div class="pull-right">
-							<i class="fa fa-truck"></i> 30 min
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row centered" style="margin-top:45px;">
-			<h1><span class="pt">Special</span> Desserts</h1>
-			<div class="small-divider"></div>
-		</div>
-		<div class="row centered products-list-row">
-			<div class="col-md-3">
-				<div class="full-product-wrapper">
-					<a href="product-details.html" class="thumbnail-link">
-						<img src="images/products/product1.jpg" alt="Brownies Home Sweet Home Medley Gift Box">
-					</a>
-					<a href="#">
-						<h5>Brownies Home Sweet Home Medley Gift Box</h5>
-					</a>
-					<div class="small-divider"></div>
-					<p class="vendor">Vendor: <a href="#">Nestle</a> </p>
-					<p class="price">₹ 220 / 1 kg</p><br>
-					<button class="pbutton product-btn"><i class="fa fa-cart-plus"></i>Add to cart</button>
-					<div class="product-additional-actions">
-						<div class="pull-left">
-							<a href="#"><i class="fa fa-thumbs-up"></i>Like</a>&nbsp;
-							<a href="#"><i class="fa fa-comments-o"></i> Comment</a>
-						</div>
-						<div class="pull-right">
-							<i class="fa fa-truck"></i> 30 min
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="full-product-wrapper">
-					<a href="product-details.html" class="thumbnail-link">
-						<img src="images/products/product2.jpg" alt="Brownies Home Sweet Home Medley Gift Box">
-					</a>
-					<a href="#">
-						<h5>Brownies Home Sweet Home Medley Gift Box</h5>
-					</a>
-					<div class="small-divider"></div>
-					<p class="vendor">Vendor: <a href="#">Nestle</a> </p>
-					<p class="price">₹ 220 / 1 kg</p><br>
-					<button class="pbutton product-btn"><i class="fa fa-cart-plus"></i>Add to cart</button>
-					<div class="product-additional-actions">
-						<div class="pull-left">
-							<a href="#"><i class="fa fa-thumbs-up"></i>Like</a>&nbsp;
-							<a href="#"><i class="fa fa-comments-o"></i> Comment</a>
-						</div>
-						<div class="pull-right">
-							<i class="fa fa-truck"></i> 30 min
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="full-product-wrapper">
-					<a href="product-details.html" class="thumbnail-link">
-						<img src="images/products/product3.jpg" alt="Brownies Home Sweet Home Medley Gift Box">
-					</a>
-					<a href="#">
-						<h5>Brownies Home Sweet Home Medley Gift Box</h5>
-					</a>
-					<div class="small-divider"></div>
-					<p class="vendor">Vendor: <a href="#">Nestle</a> </p>
-					<p class="price">₹ 220 / 1 kg</p><br>
-					<button class="pbutton product-btn"><i class="fa fa-cart-plus"></i>Add to cart</button>
-					<div class="product-additional-actions">
-						<div class="pull-left">
-							<a href="#"><i class="fa fa-thumbs-up"></i>Like</a>&nbsp;
-							<a href="#"><i class="fa fa-comments-o"></i> Comment</a>
-						</div>
-						<div class="pull-right">
-							<i class="fa fa-truck"></i> 30 min
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="full-product-wrapper">
-					<a href="product-details.html" class="thumbnail-link">
-						<img src="images/products/product4.jpg" alt="Brownies Home Sweet Home Medley Gift Box">
-					</a>
-					<a href="#">
-						<h5>Brownies Home Sweet Home Medley Gift Box</h5>
-					</a>
-					<div class="small-divider"></div>
-					<p class="vendor">Vendor: <a href="#">Nestle</a> </p>
-					<p class="price">₹ 220 / 1 kg</p><br>
-					<button class="pbutton product-btn"><i class="fa fa-cart-plus"></i>Add to cart</button>
-					<div class="product-additional-actions">
-						<div class="pull-left">
-							<a href="#"><i class="fa fa-thumbs-up"></i>Like</a>&nbsp;
-							<a href="#"><i class="fa fa-comments-o"></i> Comment</a>
-						</div>
-						<div class="pull-right">
-							<i class="fa fa-truck"></i> 30 min
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row centered products-list-row">
-			<div class="col-md-3">
-				<div class="full-product-wrapper">
-					<a href="product-details.html" class="thumbnail-link">
-						<img src="images/products/product5.jpg" alt="Brownies Home Sweet Home Medley Gift Box">
-					</a>
-					<a href="#">
-						<h5>Brownies Home Sweet Home Medley Gift Box</h5>
-					</a>
-					<div class="small-divider"></div>
-					<p class="vendor">Vendor: <a href="#">Nestle</a> </p>
-					<p class="price">₹ 220 / 1 kg</p><br>
-					<button class="pbutton product-btn"><i class="fa fa-cart-plus"></i>Add to cart</button>
-					<div class="product-additional-actions">
-						<div class="pull-left">
-							<a href="#"><i class="fa fa-thumbs-up"></i>Like</a>&nbsp;
-							<a href="#"><i class="fa fa-comments-o"></i> Comment</a>
-						</div>
-						<div class="pull-right">
-							<i class="fa fa-truck"></i> 30 min
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="full-product-wrapper">
-					<a href="product-details.html" class="thumbnail-link">
-						<img src="images/products/product6.jpg" alt="Brownies Home Sweet Home Medley Gift Box">
-					</a>
-					<a href="#">
-						<h5>Brownies Home Sweet Home Medley Gift Box</h5>
-					</a>
-					<div class="small-divider"></div>
-					<p class="vendor">Vendor: <a href="#">Nestle</a> </p>
-					<p class="price">₹ 220 / 1 kg</p><br>
-					<button class="pbutton product-btn"><i class="fa fa-cart-plus"></i>Add to cart</button>
-					<div class="product-additional-actions">
-						<div class="pull-left">
-							<a href="#"><i class="fa fa-thumbs-up"></i>Like</a>&nbsp;
-							<a href="#"><i class="fa fa-comments-o"></i> Comment</a>
-						</div>
-						<div class="pull-right">
-							<i class="fa fa-truck"></i> 30 min
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="full-product-wrapper">
-					<a href="product-details.html" class="thumbnail-link">
-						<img src="images/products/product7.jpg" alt="Brownies Home Sweet Home Medley Gift Box">
-					</a>
-					<a href="#">
-						<h5>Brownies Home Sweet Home Medley Gift Box</h5>
-					</a>
-					<div class="small-divider"></div>
-					<p class="vendor">Vendor: <a href="#">Nestle</a> </p>
-					<p class="price">₹ 220 / 1 kg</p><br>
-					<button class="pbutton product-btn"><i class="fa fa-cart-plus"></i>Add to cart</button>
-					<div class="product-additional-actions">
-						<div class="pull-left">
-							<a href="#"><i class="fa fa-thumbs-up"></i>Like</a>&nbsp;
-							<a href="#"><i class="fa fa-comments-o"></i> Comment</a>
-						</div>
-						<div class="pull-right">
-							<i class="fa fa-truck"></i> 30 min
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="full-product-wrapper">
-					<a href="product-details.html" class="thumbnail-link">
-						<img src="images/products/product8.jpg" alt="Brownies Home Sweet Home Medley Gift Box">
-					</a>
-					<a href="#">
-						<h5>Brownies Home Sweet Home Medley Gift Box</h5>
-					</a>
-					<div class="small-divider"></div>
-					<p class="vendor">Vendor: <a href="#">Nestle</a> </p>
-					<p class="price">₹ 220 / 1 kg</p><br>
-					<button class="pbutton product-btn"><i class="fa fa-cart-plus"></i>Add to cart</button>
-					<div class="product-additional-actions">
-						<div class="pull-left">
-							<a href="#"><i class="fa fa-thumbs-up"></i>Like</a>&nbsp;
-							<a href="#"><i class="fa fa-comments-o"></i> Comment</a>
-						</div>
-						<div class="pull-right">
-							<i class="fa fa-truck"></i> 30 min
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row" style="margin-top:45px;">
-			<div class="col-md-12 centered">
-				<a href="#" class="pbutton">View all Desserts</a>
+			<div class="modal-footer centered">
+				<button class="pbutton">CHECKOUT</button>
 			</div>
 		</div>
 	</div>
-
-	<div id="about-row" class="container-wrapper" style="background-color:#f6f6ee;width:100%;margin-top:50px;">
-		<div class="container" style="padding:20px 0 50px 0;">
-			<div class="row centered">
-				<h1>About Us</h1>
-			</div>
-			<div class="row">
-				<div class="col-md-4 centered">
-					<img src="images/about-1.png" alt="Amazing variety of Delicacy">
-					<h3>Amazing variety of Delicacy</h3>
-					<div class="small-divider-x2"></div>
-					<p>With a refreshing menu every day, experience a new dish inspired from cuisines across the world!</p>
-				</div>
-				<div class="col-md-4 centered">
-					<img src="images/about-2.png" alt="Amazing variety of Delicacy">
-					<h3>Earn points with every Order </h3>
-					<div class="small-divider-x2"></div>
-					<p>Who doesn’t love something fresh? Our dishes are prepared with fresh ingredients and served from a kitchen near you.</p>
-				</div>
-				<div class="col-md-4 centered">
-					<img src="images/about-3.png" alt="Amazing variety of Delicacy">
-					<h3>Express Delivery</h3>
-					<div class="small-divider-x2"></div>
-					<p>Food tastes best when it’s nice and hot. That’s what we do, we deliver within 45 minutes after placing your order.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div id="subscribe-row" class="container-wrapper" style="background-color:#fcd063;width:100%;">
-		<div class="container" style="padding: 30px 0 20px 0px;">
-			<div class="row centered">
-				<div class="col-md-1">
-					<i class="fa fa-paper-plane"></i>
-				</div>
-				<div class="col-md-5">
-					<p style="text-align:left;">Subscribe to our newsletter to receive news,<br/>updates, and another stuff by email:</p>
-				</div>
-				<div id="subscribe-container" class="col-md-6" style="text-align:right;">
-					<input type="text" placeholder="Your email address" style="margin-right:-4px;">
-					<button type="submit" class="pbutton">Subscribe</button>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<footer style="margin-top:40px;">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-3">
-					<img src="images/logo.png" alt="">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus consequat ex ut nisi posuere, et laoreet dolor suscipit.
-						Integer pulvinar, turpis et ultricies porttitor, massa arcu efficitur mi, a pretium mi odio id eros. Nulla leo nulla,
-						ornare pretium sapien at, feugiat pharetra ante. Integer non neque sit amet lorem placerat condimentum sed sed sem.
-						Pellentesque at suscipit lacus. Integer a tempus nunc, sed finibus nulla. Pellentesque in tristique augue.
-					</p>
-				</div>
-				<div class="col-md-2">
-					<h3>Information</h3>
-					<ul class="pt">
-						<li><a href="#">Specials</a></li>
-						<li><a href="#">New Products</a></li>
-						<li><a href="#">Popular Products</a></li>
-						<li><a href="#">Our stores</a></li>
-						<li><a href="careers.html">Careers</a></li>
-						<li><a href="#">About us</a></li>
-					</ul>
-				</div>
-				<div class="col-md-2">
-					<h3>Categories</h3>
-					<ul class="pt">
-						<li><a href="#">Specials</a></li>
-						<li><a href="#">New Products</a></li>
-						<li><a href="#">Popular Products</a></li>
-						<li><a href="#">Our stores</a></li>
-						<li><a href="careers.html">Careers</a></li>
-						<li><a href="#">About us</a></li>
-					</ul>
-				</div>
-				<div class="col-md-2">
-					<h3>My Account</h3>
-					<ul class="pt">
-						<li><a href="#">Specials</a></li>
-						<li><a href="#">New Products</a></li>
-						<li><a href="#">Popular Products</a></li>
-						<li><a href="#">Our stores</a></li>
-						<li><a href="careers.html">Careers</a></li>
-						<li><a href="#">About us</a></li>
-					</ul>
-				</div>
-				<div class="col-md-3">
-					<h3>Contact Us</h3>
-					<p class="pt-10">
-						<i class="pt fa fa-phone-square"></i>
-						<span>1-800-234-5677</span>
-					</p>
-					<p class="pt-10">
-						<i class="pt fa fa-map-marker"></i> 4578 Marmora road, <br/> glasgow d04 89 gr.
-						<img src="images/map.jpg" alt="Our address on google maps" style="margin-top:40px;">
-					</p>
-				</div>
-			</div>
-		</div>
-		<div id="bottom-row">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<p>Melloe - delivering celebrations. All rights reserved - 2016</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
-	<!--<hr class="featurette-divider">-->
-	<!--Modals-->
-	<!--Checkout modal-->
-	<div class="modal fade" id="checkout-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-					<h4 class="modal-title" id="gridModalLabel">Order Summary</h4>
-				</div>
-				<div class="modal-body">
-					<div class="container-fluid bd-example-row">
-						<div class="row">
-							<div class="col-md-6">Col1</div>
-							<div class="col-md-6">Col2</div>
-						</div>
-					</div>
-				</div>
-				<div class="modal-footer centered">
-					<button class="pbutton">CHECKOUT</button>
-				</div>
-			</div>
-		</div>
-	</div>
+</div>
 </body>
 
 </html>
