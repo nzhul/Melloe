@@ -451,6 +451,10 @@ footer ul li {
 
 /*Details Page*/
 
+#product-details-row {
+	margin-top: 220px;
+}
+
 #product-details-row img {
 	border: 2px solid #925d4e;
 }
