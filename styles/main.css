@@ -551,7 +551,7 @@ footer ul li {
 	font-size: 20px;
 }
 
-.image-container .wide-background-image {
+.image-container .wide-image-container {
 	width: 1903;
 	position: absolute;
 	top:114px;
@@ -602,6 +602,10 @@ footer ul li {
 	border-radius: 0px;
 	margin: -1px 0 0 0px;
 	color: #935c4e;
+}
+
+.whats-on-our-menu {
+	margin-top: 140px;
 }
 
 /*Initial Index End*/
