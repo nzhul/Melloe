@@ -11,59 +11,43 @@
 	<script src="scripts/external/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="scripts/external/font-awesome-4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="styles/main.css">
-	<link rel="stylesheet" href="styles/checkout-modal.css">
-	<link href="styles/carousel.css" rel="stylesheet" />
+	<link rel="stylesheet" href="styles/modals.css">
+	<link rel="stylesheet" href="styles/responsive.css">
 
 	<script src="scripts/melloe.js"></script>
-	<script src="scripts/external/bootstrap-select-1.12.1/dist/js/bootstrap-select.min.js"></script>
-	<link href="scripts/external/bootstrap-select-1.12.1/dist/css/bootstrap-select.min.css" rel="stylesheet" />
-
-	<script>
-		$(document).ready(function(){
-				$('.selectpicker').selectpicker({
-				style: 'btn-info',
-				size: 4
-				});
-		});
-	</script>
 </head>
 
 <body>
-	<!--Checkout modal end-->
 	<nav class="navbar navbar-default navbar-fixed-top short-nav">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-2">
 					<a href="index.html"><img src="images/logov2.png" id="main-logo" alt="Melloe company logo"></a>
 				</div>
-				<div class="col-md-2 col-md-offset-3">
+				<div class="col-md-2 col-md-offset-3 non-responsive-only">
 					<p class="pt-30">
 						<i class="pt fa fa-phone-square"></i>
 						<span>Call us at:</span><br/>
 						<span>1-800-234-5677</span>
 					</p>
 				</div>
-				<div class="col-md-2">
+				<div class="col-md-2 non-responsive-only">
 					<p class="pt-30">
 						<i class="pt fa fa-map-marker"></i> 4578 Marmora road, glasgow d04 89 gr.
 					</p>
 				</div>
 				<div class="col-md-2 col-md-offset-1 header-user-col">
-					<a href="user-profile.html" class="pb bt mct profile-circle pull-right">
-						<span class="fa fa-user circle-icon" style="left:-18px;"></span>
-					</a>
-					<a href="#" class="pb bt mct profile-circle pull-right" data-toggle="modal" data-target="#checkout-modal">
-						<span id="cart-counter">12</span>
-						<i class="fa fa-shopping-cart circle-icon fa-flip-horizontal"></i>
-					</a>
+					<a href="user-profile.html" class="pb bt mct profile-circle pull-right"><span class="fa fa-user circle-icon" style="left:-18px;"></span></a>
+					<a href="#" class="pb bt mct profile-circle pull-right" data-toggle="modal" data-target="#checkout-modal"><span id="cart-counter">12</span><i class="fa fa-shopping-cart circle-icon fa-flip-horizontal"></i></a>
 				</div>
 			</div>
-			<!--/.nav-collapse -->
 		</div>
 	</nav>
 
-	<div class="container image-container">
-		<img src="images/careers-page-bg-image.jpg" class="wide-background-image" alt="">
+	<div class="container image-container careers-header">
+		<div class="wide-image-container">
+			<img src="images/careers-page-bg-image.jpg" class="wide-background-image" alt="">
+		</div>
 		<div class="image-container-content">
 			<h1 style="font-size:60px;margin-top:40px;">Let’s make <br> everyone’s life sweeter</h1>
 		</div>

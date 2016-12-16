@@ -535,33 +535,87 @@ footer ul li {
 
 /*Initial Index*/
 
-.image-container {
-	width:100%;
-	height: 500px;
-	padding: 240px 0 0 0px;
-	margin: 0px;
+.image-container.careers-header .image-container-content {
+	padding: 20px 0 0 0px;
 	color: white;
 }
 
-.image-container h1 {
-
+.image-container.careers-header {
+	margin-bottom: 220px;
 }
 
-.image-container p {
-	font-size: 20px;
+.image-container.about-header .image-container-content {
+	padding: 150px 0 0 0px;
+	color: white;
+	width:50%;margin: 0 auto;
+}
+
+.image-container.about-header {
+	margin-bottom: -30px;
+}
+
+.image-container.about-header h1 {
+	font-size: 60px;
+	margin-bottom: 30px;
+}
+
+.image-container.about-header p {
+	font-size: 16px;
+	margin-bottom: 40px;
+}
+
+.image-container.about-header p:last-child {
+	margin-bottom: 0px;
+}
+
+.image-container.help-header .image-container-content {
+	padding: 20px 0 0 0px;
+	color: white;
+}
+
+.image-container.help-header {
+	margin-bottom: 200px;
+}
+
+.image-container.initial-header .image-container-content {
+	padding: 20px 0 0 0px;
+	color: white;
+}
+
+.image-container.initial-header {
+	margin-bottom: 120px;
+}
+
+.image-container.terms-header .image-container-content {
+	padding: 20px 0 0 0px;
+}
+
+.image-container.terms-header {
+	margin-bottom: 150px;
+}
+
+.image-container.terms-header .image-container-content h1 {
+	font-size:60px;color:#676775;margin-top:-10px;
+}
+
+.image-container {
+	width: 100%;
+	padding: 0px;
 }
 
 .image-container .wide-image-container {
-	width: 1903;
+	width: 100%;
 	position: absolute;
 	top:114px;
 	z-index: 1;
+	overflow: hidden;
 }
 
 .image-container .image-container-content {
 	position: relative;
 	z-index: 9;
 	text-align: center;
+	margin-top: 200px;
 }
 
 .image-container input[type='text'] {
@@ -799,6 +853,7 @@ background: #428bca;
 
 #about-page-row {
 	margin-top: 150px;
+	background-color:#eae8e7;width:100%;margin-top:114px;
 }
 
 .about-page-single-row {

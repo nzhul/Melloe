@@ -11,64 +11,60 @@
 	<script src="scripts/external/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="scripts/external/font-awesome-4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="styles/main.css">
-	<link rel="stylesheet" href="styles/checkout-modal.css">
-	<link href="styles/carousel.css" rel="stylesheet" />
+	<link rel="stylesheet" href="styles/modals.css">
+	<link rel="stylesheet" href="styles/responsive.css">
 
 	<script src="scripts/melloe.js"></script>
 </head>
 
 <body>
-	<!--Checkout modal end-->
 	<nav class="navbar navbar-default navbar-fixed-top short-nav">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-2">
 					<a href="index.html"><img src="images/logov2.png" id="main-logo" alt="Melloe company logo"></a>
 				</div>
-				<div class="col-md-2 col-md-offset-3">
+				<div class="col-md-2 col-md-offset-3 non-responsive-only">
 					<p class="pt-30">
 						<i class="pt fa fa-phone-square"></i>
 						<span>Call us at:</span><br/>
 						<span>1-800-234-5677</span>
 					</p>
 				</div>
-				<div class="col-md-2">
+				<div class="col-md-2 non-responsive-only">
 					<p class="pt-30">
 						<i class="pt fa fa-map-marker"></i> 4578 Marmora road, glasgow d04 89 gr.
 					</p>
 				</div>
 				<div class="col-md-2 col-md-offset-1 header-user-col">
-					<a href="user-profile.html" class="pb bt mct profile-circle pull-right">
-						<span class="fa fa-user circle-icon" style="left:-18px;"></span>
-					</a>
-					<a href="#" class="pb bt mct profile-circle pull-right" data-toggle="modal" data-target="#checkout-modal">
-						<span id="cart-counter">12</span>
-						<i class="fa fa-shopping-cart circle-icon fa-flip-horizontal"></i>
-					</a>
+					<a href="user-profile.html" class="pb bt mct profile-circle pull-right"><span class="fa fa-user circle-icon" style="left:-18px;"></span></a>
+					<a href="#" class="pb bt mct profile-circle pull-right" data-toggle="modal" data-target="#checkout-modal"><span id="cart-counter">12</span><i class="fa fa-shopping-cart circle-icon fa-flip-horizontal"></i></a>
 				</div>
-			</div>
-			<!--/.nav-collapse -->
-		</div>
-	</nav>
+</div>
+<!--/.nav-collapse -->
+</div>
+</nav>
 
-	<div class="container image-container">
-		<img src="images/about-page-bg-image.jpg" class="wide-background-image" alt="">
-		<div class="image-container-content" style="width:50%;margin: 0 auto;margin-top:-80px;">
-			<h1 style="font-size:60px;">Our Story</h1>
-			<p style="font-size:16px;margin-top:30px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin iaculis dolor egestas tincidunt dignissim. Etiam sit amet
+	<div class="container image-container about-header">
+		<div class="wide-image-container">
+			<img src="images/about-page-bg-image.jpg" class="wide-background-image" alt="">
+		</div>
+		<div class="image-container-content">
+			<h1>Our Story</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin iaculis dolor egestas tincidunt dignissim. Etiam sit amet
 				dui velit. Fusce justo felis, lacinia suscipit magna non, facilisis tristique nisi. Fusce non diam eu felis vehicula
 				tempor. Integer egestas cursus egestas. Phasellus rhoncus tempor augue, sit amet feugiat arcu suscipit non. Duis posuere,
 				lacus a vulputate accumsan, massa nisi congue ipsum, at consectetur arcu tortor ac elit. Morbi faucibus fringilla finibus.
 				Maecenas vel erat magna. Integer fermentum felis sollicitudin, pharetra tellus sed, consectetur quam. Sed nisl dui, venenatis
 				a convallis ac, mattis at sapien. Fusce convallis aliquet justo, ac porta urna euismod vitae. nec dolor ac venenatis.</p>
-			<p style="margin-top:40px;font-size:16px;">Integer at arcu urna. Ut bibendum nulla nec iaculis iaculis. Donec lacinia nibh porta, sodales ex nec, hendrerit neque.
+			<p>Integer at arcu urna. Ut bibendum nulla nec iaculis iaculis. Donec lacinia nibh porta, sodales ex nec, hendrerit neque.
 				Nullam sed auctor velit, eu feugiat arcu. Aliquam molestie lacus nec malesuada rutrum. Curabitur varius at metus quis
 				mollis. Integer gravida rhoncus magna, vitae efficitur sem semper eu. Mauris vel sem nisl. Integer velit nisl, lobortis
 				in tempus nec, placerat hendrerit est. Mauris eu malesuada leo.</p>
 		</div>
 	</div>
 
-	<div id="about-page-row" class="container centered" style="background-color:#eae8e7;width:100%;margin-top:114px;">
+	<div id="about-page-row" class="container centered">
 		<div class="row" style="margin:20px auto;">
 			<div class="col-md-12">
 				<h2>What makes Melloe your ideal choice ?</h2>
@@ -141,22 +137,26 @@
 
 	</div>
 
-	<div id="subscribe-row" class="container-wrapper" style="background-color:#fcd063;width:100%;">
-		<div class="container" style="padding: 30px 0 20px 0px;">
-			<div class="row centered">
-				<div class="col-md-1">
-					<i class="fa fa-paper-plane"></i>
-				</div>
-				<div class="col-md-5">
-					<p style="text-align:left;">Subscribe to our newsletter to receive news,<br/>updates, and another stuff by email:</p>
-				</div>
-				<div id="subscribe-container" class="col-md-6" style="text-align:right;">
-					<input type="text" placeholder="Your email address" style="margin-right:-4px;">
-					<button type="submit" class="pbutton">Subscribe</button>
-				</div>
+<div id="subscribe-row" class="container-wrapper" style="background-color:#fcd063;width:100%;">
+<div class="container">
+	<div class="row centered">
+		<div class="col-md-1">
+			<div class="subscribe-text-box">
+				<i class="fa fa-paper-plane"></i>
 			</div>
 		</div>
-	</div>
+		<div class="col-md-5">
+			<p class="subscribe-text-box" style="text-align:left;">Subscribe to our newsletter to receive news,<br/>updates, and another stuff by email:</p>
+</div>
+<div id="subscribe-container" class="col-md-6" style="text-align:right;">
+<div class="subscribe-input-box">
+	<input type="text" placeholder="Your email address" style="margin-right:-4px;">
+<button type="submit" class="pbutton">Subscribe</button>
+</div>
+</div>
+</div>
+</div>
+</div>
 
 	<footer style="margin-top:40px;">
 		<div class="container">
