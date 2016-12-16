@@ -11,8 +11,9 @@
 	<script src="scripts/external/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="scripts/external/font-awesome-4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="styles/main.css">
-	<link rel="stylesheet" href="styles/checkout-modal.css">
-	<link href="styles/carousel.css" rel="stylesheet" />
+	<link rel="stylesheet" href="styles/modals.css">
+	<link rel="stylesheet" href="styles/carousel.css" />
+	<link rel="stylesheet" href="styles/responsive.css">
 
 	<script src="scripts/melloe.js"></script>
 
@@ -25,14 +26,14 @@
 				<div class="col-md-2">
 					<a href="index.html"><img src="images/logo.png" id="main-logo" alt="Melloe company logo"></a>
 				</div>
-				<div class="col-md-2 col-md-offset-3">
+				<div class="col-md-2 col-md-offset-3 non-responsive-only">
 					<p class="pt-30">
 						<i class="pt fa fa-phone-square"></i>
 						<span>Call us at:</span><br/>
 						<span>1-800-234-5677</span>
 					</p>
 				</div>
-				<div class="col-md-2">
+				<div class="col-md-2 non-responsive-only">
 					<p class="pt-30">
 						<i class="pt fa fa-map-marker"></i> 4578 Marmora road, glasgow d04 89 gr.
 					</p>
@@ -40,52 +41,53 @@
 				<div class="col-md-2 col-md-offset-1 header-user-col">
 					<a href="user-profile.html" class="pb bt mct profile-circle pull-right">
 						<span class="fa fa-user circle-icon" style="left:-18px;"></span>
-					</a>
-					<a href="#" class="pb bt mct profile-circle pull-right" data-toggle="modal" data-target="#checkout-modal">
-						<span id="cart-counter">12</span>
-						<i class="fa fa-shopping-cart circle-icon fa-flip-horizontal"></i>
-					</a>
-				</div>
-			</div>
-			<div class="custom-divider"></div>
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
-					aria-controls="navbar">
+</a>
+<a href="#" class="pb bt mct profile-circle pull-right" data-toggle="modal" data-target="#checkout-modal">
+	<span id="cart-counter">12</span>
+	<i class="fa fa-shopping-cart circle-icon fa-flip-horizontal"></i>
+</a>
+</div>
+</div>
+<div class="custom-divider non-responsive-only"></div>
+<div class="navbar-header">
+	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+		aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-			</div>
-			<div id="navbar" class="navbar-collapse collapse">
-				<ul class="nav navbar-nav">
-					<li class="active"><a href="#">Home</a></li>
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Desserts <span class="caret"></span></a>
-						<ul class="dropdown-menu">
-							<li class="dropdown-header">1st category</li>
-							<li><a href="#">Chocolate Cake</a></li>
-							<li><a href="#">Bonbons</a></li>
-							<li role="separator" class="divider"></li>
-							<li class="dropdown-header">2nd category</li>
-							<li><a href="#">Chocolate Cake</a></li>
-							<li><a href="#">Bonbons</a></li>
-							<li role="separator" class="divider"></li>
-							<li class="dropdown-header">3th category</li>
-							<li><a href="#">Chocolate Cake</a></li>
-							<li><a href="#">Bonbons</a></li>
-						</ul>
-					</li>
-					<li><a href="#about">About Us</a></li>
-					<li><a href="#contact">Careers</a></li>
-				</ul>
-				<div class="pull-right pt-10">
-					Viewing menu for <a href="#" class="dashed-box" style="padding: 5px 10px;">Lower Parel, Mumbai, Maharashtra, India</a>
-				</div>
-			</div>
-			<!--/.nav-collapse -->
-		</div>
-	</nav>
+</div>
+<div id="navbar" class="navbar-collapse collapse">
+	<ul class="nav navbar-nav">
+		<li class="active"><a href="#">Home</a></li>
+		<li class="dropdown">
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Desserts <span class="caret"></span></a>
+			<ul class="dropdown-menu">
+				<li class="dropdown-header">1st category</li>
+				<li><a href="#">Chocolate Cake</a></li>
+				<li><a href="#">Bonbons</a></li>
+				<li role="separator" class="divider"></li>
+				<li class="dropdown-header">2nd category</li>
+				<li><a href="#">Chocolate Cake</a></li>
+				<li><a href="#">Bonbons</a></li>
+				<li role="separator" class="divider"></li>
+				<li class="dropdown-header">3th category</li>
+				<li><a href="#">Chocolate Cake</a></li>
+				<li><a href="#">Bonbons</a></li>
+			</ul>
+		</li>
+		<li><a href="about.html">About Us</a></li>
+		<li><a href="careers.html">Careers</a></li>
+	</ul>
+	<div class="pull-right pt-10 non-responsive-only">
+		Viewing menu for
+		<a href="#" class="dashed-box" style="padding: 5px 10px;">Lower Parel, Mumbai, Maharashtra, India</a>
+</div>
+</div>
+<!--/.nav-collapse -->
+</div>
+</nav>
 <div class="carousel-horizontal-divider" style="margin-top:230px;"></div>
 	<div id="user-profile-row" class="container" style="margin-top: 40px;">
 		<div class="row">

@@ -329,6 +329,14 @@
 	.image-container.about-header {
 		margin-bottom: -250px;
 	}
+
+	/*User profile row*/
+
+	#user-profile-row .tabs-wrapper {
+		margin: 0 0 0 0px;
+	}
+
+	.carousel-horizontal-divider {display: none;}
  }
 
  /*Large devices (desktops, less than 1200px)*/
