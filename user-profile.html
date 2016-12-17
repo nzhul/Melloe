@@ -42,7 +42,7 @@
 					<a href="user-profile.html" class="pb bt mct profile-circle pull-right">
 						<span class="fa fa-user circle-icon" style="left:-18px;"></span>
 </a>
-<a href="#" class="pb bt mct profile-circle pull-right" data-toggle="modal" data-target="#checkout-modal">
+<a href="#" class="pb bt mct profile-circle pull-right" data-toggle="modal" data-target="#checkoutModal">
 	<span id="cart-counter">12</span>
 	<i class="fa fa-shopping-cart circle-icon fa-flip-horizontal"></i>
 </a>
@@ -285,23 +285,77 @@
 	</footer>
 	<!--Modals-->
 	<!--Checkout modal-->
-	<div class="modal fade" id="checkout-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-		<div class="modal-dialog">
+	<div class="modal fade" id="checkoutModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
 			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-					<h4 class="modal-title" id="gridModalLabel">Order Summary</h4>
-				</div>
-				<div class="modal-body">
-					<div class="container-fluid bd-example-row">
-						<div class="row">
-							<div class="col-md-6">Col1</div>
-							<div class="col-md-6">Col2</div>
+				<div class="checkout-modal-content">
+					<h4>ORDER SUMMARY</h4>
+					<div id="delivery-row" class="checkout-box">
+						<div class="tabs-wrapper">
+							<ul class="nav nav-tabs">
+								<li class="active"><a href="#deliver-now" data-toggle="tab">DELIVER NOW</a></li>
+								<li><a href="#deliver-later" data-toggle="tab">DELIVER LATER</a></li>
+							</ul>
+							<div class="tab-content">
+								<div class="tab-pane fade active in" id="deliver-now">
+									<p style="margin-top:20px;">Your delivery will arrive by</p>
+									<p style="font-size:20px;">10:50 PM</p>
+								</div>
+								<div class="tab-pane fade" id="deliver-later">
+									<p style="margin: 20px; 0 10px 0px">Please choose date and time</p>
+									<input type="date">
+									<input type="time">
+								</div>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="modal-footer centered">
-					<button class="pbutton">CHECKOUT</button>
+					<div id="products-row" class="checkout-box">
+						<div class="checkout-product-row">
+							<img src="images/checkout/checkout-product1.jpg" alt="">
+							<div class="product-description-box">
+								<p>Brownies Home Sweet Home Medley Gift Box</p>
+								<select name="quantity" id="first-item-quantity">
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+								</select>
+								<span>220</span>
+							</div>
+							<div class="checkout-produc-divider"></div>
+						</div>
+						<div class="checkout-product-row">
+							<img src="images/checkout/checkout-product2.jpg" alt="">
+							<div class="product-description-box">
+								<p>Brownies Home Sweet Home Medley Gift Box</p>
+								<select name="quantity" id="first-item-quantity">
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+								</select>
+								<span>220</span>
+							</div>
+							<div class="checkout-produc-divider" style="border:none;"></div>
+						</div>
+						<input id="promo-code-input" type="text" placeholder="Enter promo code">
+						<button class="add-yellow-button-small"><i class="fa fa-plus-circle" aria-hidden="true"></i> Add</button>
+						<p>
+							<span id="total-text">Total:</span> <span id="total-cost-counter">380</span>
+						</p>
+						<div class="checkout-produc-divider" style="border:none;margin-bottom:30px;">&nbsp;</div>
+					</div>
+					<div id="address-row" class="checkout-box">
+						<label for="additional-info-textarea">Additional info:</label>
+						<textarea name="additional-info" id="additional-info-textarea" placeholder="Enter additional info here ..."></textarea>
+						<label for="addresses-dropdown">Choose Address:</label><br>
+						<select name="addresses-dropdown" id="addresses-dropdown">
+							<option value="1">Sofia, Bulgaria, Mladost 1</option>
+						</select>
+					</div>
+					<button class="pbutton">ORDER NOW</button>
 				</div>
 			</div>
 		</div>
