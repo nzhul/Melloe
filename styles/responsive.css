@@ -20,6 +20,8 @@
 
 	.header-user-col {
 		margin-top: -100px;
+		position: relative;
+		z-index: 999;
 	}
 
 		.header-user-col a {
@@ -168,6 +170,10 @@
 
 	/*Initial Index*/
 
+	.initial-header .image-container-content input[type="text"] {
+		margin-top: 20px;
+	}
+
 	.image-container {
 		position: relative;
 		top: -137px;
@@ -280,6 +286,8 @@
 		margin-left: 25%;
 		margin-bottom: 40px;
 		margin-top: 0px;
+		padding: 10px 20px 10px 20px;
+		font-size: 20px;
 	}
 
 	#mobile-app-row .app-download-preview-image {
@@ -361,6 +369,11 @@
 			margin: 0 0 0 0px;
 		}
 
+		.image-container.careers-header h1 {
+			font-size: 40px;
+			margin-top: 40px;
+		}
+
 	#careers-row .our-mission-row .col-md-12 {
 		padding-left: 0px;
 		padding-right: 0px;
@@ -396,19 +409,38 @@
 		margin-left: 20px;
 		height: 160px;
 		margin-top: -10px;
+		font-size:10px;
 	}
+
+
 
 	#clients-row img {
 		clear: both;
 	}
 
+	#apply-now-row h1 {
+		font-size:30px;
+	}
+
+	#apply-now-row .pbutton {
+		padding: 10px 0 10px 0px;
+		font-size:15px;
+		width:80%;
+		height:100%;
+	}
+
+
 	/*Checkout modal*/
+	.modal-dialog {
+		width: 95%;
+	}
+
 	#checkoutModal .modal-dialog {
 		width: 95%;
 	}
 
 	#checkoutModal .product-description-box {
-		width: 68%;
+		width: 63%;
 		text-align:left;
 	}
 }
@@ -447,7 +479,7 @@
 	#clients-row .client-text {
 		float: left;
 		width: 60%;
-		margin-left: 20px;
+		margin-left: 10px;
 		height: 160px;
 		margin-top: -10px;
 	}
