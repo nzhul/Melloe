@@ -7,6 +7,11 @@ p {
 .modal-open .navbar-fixed-bottom {
 	padding-right: 17px;
 }
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover {
+	background-color: #f8f8f8;
+}
+
 /*Bootstrap resets end*/
 
 
