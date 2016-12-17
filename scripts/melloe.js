@@ -1,5 +1,35 @@
 $(document).ready(function () {
 
+	var addToCartButtons = $('.add-to-cart-button');
+	if (addToCartButtons.length > 0) {
+
+		var cartCounter = $('#cart-counter');
+		addToCartButtons.on('click', function () {
+			var currentCount = cartCounter.text();
+			var updatedCartCount = parseInt(currentCount) + 1;
+			cartCounter.text(updatedCartCount);
+
+			// Sending the data to the server
+			var productId = $(this).data('product-id');
+			var currentCartCount = parseInt(currentCount) + 1;
+
+			var request = $.ajax({
+				url: "http://localhost/cart.php",
+				type: "POST",
+				data: { productId: productId, cartCount: updatedCartCount },
+				dataType: "html"
+			});
+
+			request.done(function (msg) {
+				console.log('The request to the server was successful!');
+			});
+
+			request.fail(function (jqXHR, textStatus) {
+				console.log('The request to the server failed!');
+			});
+		})
+	}
+
 	if(window.screen.width > 991){
 		var products = $('.full-product-wrapper');
 		var zoomIcon = $('<i class="fa fa-search zoom-hover-icon"></i>');
